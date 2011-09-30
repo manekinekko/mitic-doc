@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releveJournalier xmlns:stl="http://www.codesynthesis.com/xmlns/xsstl"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="meteo2.xsd">
+	
+	<releve precipitation="1" humidite="87.9" date="2011-09-09" pression="19"
+		temperature="87 C" metar="KIJU">
+		<vent direction="N">
+			<ventVitesseAbs>14 mph</ventVitesseAbs>
+		</vent>
+	</releve>
+	
+</releveJournalier>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" xmlns:stl="http://www.codesynthesis.com/xmlns/xsstl">
+
+	<!-- Element racine -->
+
+	<xs:element name="releveJournalier">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="releve" maxOccurs="24"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- -->
+
+	<xs:element name="releve">
+		<xs:complexType>
+
+			<xs:sequence>
+				<xs:element ref="vent" />
+			</xs:sequence>
+
+			<xs:attribute name="metar" type="metarTypeReleve" use="required" />
+			<xs:attribute name="date" type="xs:date" use="required" />
+			<xs:attribute name="temperature" type="temperatureType"
+				use="required" />
+			<xs:attribute name="pression" type="xs:float" use="required" />
+			<xs:attribute name="humidite" type="xs:float" use="required" />
+			<xs:attribute name="precipitation" type="xs:positiveInteger"
+				use="required" />
+
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="vent">
+		<xs:complexType>
+
+			<xs:choice>
+				<xs:element ref="ventVitesseAbs" />
+				<xs:element ref="ventBeaufort" />
+			</xs:choice>
+			<xs:attribute name="direction" type="ventDirectionType"
+				use="required" />
+
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ventVitesseAbs">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d+\s*(m/s|km/h|mph)" />
+				</xs:restriction>
+			</xs:complexContent>
+			
+		<xs:attribute name="xx" type="xs:string"></xs:attribute>
+		
+		</xs:complexType>
+		
+
+	</xs:element>
+
+	<xs:element name="ventBeaufort">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="(\d|1[0-2])" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!-- Types restreints -->
+
+	<xs:simpleType name="ventDirectionType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(N|S|E|O|NE|NO|SE|SO)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="metarTypeReleve">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="temperatureType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d+(.\d)?\s*(C|F)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>
