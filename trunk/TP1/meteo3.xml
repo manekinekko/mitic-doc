@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<racine 
+	xmlns:stl="http://www.codesynthesis.com/xmlns/xsstl"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="meteo3.xsd">
+
+	<listeDeMeteo>
+		<meteo altitude="167 m" longitude="87 ouest" metar="FOOO" latitude="80 nord">
+			<nom>nom1</nom>
+			<numero></numero>
+			<rue></rue>
+			<zipcode></zipcode>
+			<ville></ville>
+			<telephone></telephone>
+			<pays>FR</pays>
+		</meteo>
+		<meteo altitude="167 m" longitude="87 ouest" metar="FOOP" latitude="80 nord">
+			<nom>nom1</nom>
+			<numero></numero>
+			<rue></rue>
+			<zipcode></zipcode>
+			<ville></ville>
+			<telephone></telephone>
+			<pays>FR</pays>
+		</meteo>
+	</listeDeMeteo>
+
+	<releveJournalier>
+		<releve precipitation="876" temperature="65F" date="2000-01-12" humidite="76.8" pression="98.7" 
+		metar="FOOO">
+			<vent direction="N">
+				<ventBeaufort>12</ventBeaufort>
+			</vent>
+		</releve>
+	</releveJournalier> 
+	
+</racine>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" 
+	xmlns:stl="http://www.codesynthesis.com/xmlns/xsstl">
+
+	<xs:import namespace="http://www.codesynthesis.com/xmlns/xsstl"
+		schemaLocation="http://www.codesynthesis.com/projects/xsstl/xsstl/iso3166-country-code.xsd" />
+
+	<!-- Element racine -->
+
+	<xs:element name="listeDeMeteo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meteo" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="metarKey">
+			<xs:selector xpath="./meteo"></xs:selector>
+			<xs:field xpath="@metar"></xs:field>
+		</xs:key>
+		
+	</xs:element>
+
+	<xs:element name="meteo">
+
+		<xs:complexType>
+
+			<xs:all>
+				<xs:element ref="nom" />
+				<xs:element ref="pays" />
+				<xs:element ref="numero" />
+				<xs:element ref="rue" />
+				<xs:element ref="zipcode" />
+				<xs:element ref="ville" />
+				<xs:element ref="telephone" minOccurs="0" />
+			</xs:all>
+
+			<xs:attribute name="metar" type="metarTypeMeteo" use="required" />
+			<xs:attribute name="latitude" type="latitudeType" use="required" />
+			<xs:attribute name="longitude" type="longitudeType" use="required" />
+			<xs:attribute name="altitude" type="altitudeType" use="required" />
+
+		</xs:complexType>
+
+	</xs:element>
+
+	<xs:element name="nom" type="xs:string" />
+	<xs:element name="pays" type="stl:ISO3166CountyCode" />
+	<xs:element name="numero" type="xs:string" />
+	<xs:element name="zipcode" type="xs:string" />
+	<xs:element name="rue" type="xs:string" />
+	<xs:element name="ville" type="xs:string" />
+	<xs:element name="telephone" type="xs:string" />
+
+	<!-- Types restreints -->
+
+	<xs:simpleType name="metarTypeMeteo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="latitudeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(\d|90|[0-8]\d)\s*(nord|sud)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="longitudeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(\d{1,2}|180|1[0-7]\d)?\s*(est|ouest)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="altitudeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d+(.\d+)?\s*m" />
+		</xs:restriction>
+
+	</xs:simpleType>
+
+
+</xs:schema>
