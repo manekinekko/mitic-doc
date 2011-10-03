@@ -47,18 +47,11 @@
 	</xs:element>
 
 	<xs:element name="ventVitesseAbs">
-		<xs:complexType>
-			<xs:complexContent>
-				<xs:restriction base="xs:string">
-					<xs:pattern value="\d+\s*(m/s|km/h|mph)" />
-				</xs:restriction>
-			</xs:complexContent>
-			
-		<xs:attribute name="xx" type="xs:string"></xs:attribute>
-		
-		</xs:complexType>
-		
-
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="\d+\s*(m/s|km/h|mph)" />
+			</xs:restriction>
+		</xs:simpleType>
 	</xs:element>
 
 	<xs:element name="ventBeaufort">

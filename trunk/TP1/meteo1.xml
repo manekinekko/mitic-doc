@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listeDeMeteo xmlns:stl="http://www.codesynthesis.com/xmlns/xsstl"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="meteo1.xsd">
+	<meteo latitude="14 nord" longitude="25 est" altitude="36 m"
+		metar="KIJU">
+		<nom />
+		<pays>FR</pays>
+		<numero />
+		<rue />
+		<zipcode />
+		<ville />
+	</meteo>
+	<meteo latitude="14 nord" longitude="25 est" altitude="36 m"
+		metar="KIJB">
+		<nom />
+		<pays>JP</pays>
+		<numero />
+		<rue />
+		<zipcode />
+		<ville />
+	</meteo>
+</listeDeMeteo>
