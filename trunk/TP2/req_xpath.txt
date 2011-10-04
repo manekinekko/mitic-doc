@@ -1,0 +1,16 @@
+DOC MITIC TP2
+
+Q1.1) //ingredient[attribute::nom='flour']/@qte
+Q1.2) sum(//ingredient[contains(@nom, 'eggs')]/@qte)
+Q1.3) //ingredient[attribute::unit="tablespoon" or attribute::unit="teaspoon"]/@nom
+Q1.4) //recette/nom[text()="Cailles en Sarcophages"]/following-sibling::ingredient//ingredient[@nom="stock"]/preparation/pas[2]
+Q1.5.a) //ingredient[not(@unit = preceding::*/@unit)]/@unit
+Q1.5.b) 
+Q1.6) //recette[ceiling(count(//recette) div 2)]
+Q1.7) //recette[ count(ingredient) > 6 ]
+Q1.8 a refaire!) //ingredient[  contains(@nom, 'eggs')/@qte > preceding::ingredient[contains(@nom, 'eggs')] ]/@qte
+
+
+Q2.1) //top500:site[ top500:rank/text() < 16 ]
+Q2.2) //top500:site[contains(top500:computer, 'Myrinet')]
+Q2.3) //top500:site[top500:country='Japan']
