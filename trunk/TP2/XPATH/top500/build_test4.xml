@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><project name="MonProjetDeTP" default="apply-xsl" basedir=".">     <target name="apply-xsl">     <xslt in="top500_200811.xml" out="top500_200811_test4.xhtml" style="test4.xsl">	 <classpath location="../saxon9he.jar" />       </xslt>    </target></project>
