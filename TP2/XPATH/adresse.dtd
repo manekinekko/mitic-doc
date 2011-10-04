@@ -1,0 +1,18 @@
+<!ELEMENT carnet (carte+)>
+<!ELEMENT carte (prénom, nom, organisme, adresse+, note?)>
+<!ATTLIST carte id ID #REQUIRED>
+<!ELEMENT prénom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT organisme (#PCDATA)>
+<!ELEMENT adresse (numéro*, voie, ville, mel*)>
+<!ATTLIST adresse perso (true | false) "true">
+<!ATTLIST mel perso (true | false) "true">
+<!ELEMENT numéro (#PCDATA)>
+<!ATTLIST numéro type NMTOKEN #IMPLIED>
+<!ELEMENT voie (#PCDATA)>
+<!ATTLIST voie type (rue | avenue | impasse | place | boulevard) "rue">
+<!ELEMENT ville EMPTY>
+<!ATTLIST ville codepostal CDATA #IMPLIED nom CDATA #REQUIRED>
+<!ELEMENT note (#PCDATA | clé)*>
+<!ELEMENT clé (#PCDATA)>
+<!ELEMENT mel (#PCDATA)>
