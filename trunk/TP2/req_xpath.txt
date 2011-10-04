@@ -21,3 +21,10 @@ Q2.8) /top500:list/top500:site[contains(top500:computer, 'Itanium') and not(cont
 Q2.9) /top500:list/top500:site[contains(top500:computer, 'Xeon') and contains(top500:manufacturer, 'Hewlett-Packard') and not(contains(top500:country, 'United States'))]
 Q2.10) /top500:list/top500:site[contains(top500:computer, 'Xeon') and top500:number-of-processors > 1000]
 
+Q3.1) //top500:computer[contains(text(), 'Infiniband')]/preceding-sibling::top500:rank
+Q3.2) /top500:list/top500:site/top500:manufacturer[contains(text(), 'Fujistu') or contains(text(), 'Hitachi') or contains(text(), 'Nec') ]/following-sibling::top500:country
+Q3.3) 
+Q3.4) 
+Q3.5) 
+Q3.6) 
+Q3.6) 
