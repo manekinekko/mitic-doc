@@ -8,7 +8,7 @@ Q1.5.a) //ingredient[not(@unit = preceding::*/@unit)]/@unit
 Q1.5.b) 
 Q1.6) //recette[ceiling(count(//recette) div 2)]
 Q1.7) //recette[ count(ingredient) > 6 ]
-Q1.8) //ingredient[contains(@nom, 'eggs') > preceding::ingredient[contains(@nom, 'eggs')]/@qte]/@qte
+Q1.8) //ingredient[ contains(@nom, 'eggs') > preceding::ingredient[contains(@nom, 'eggs')]/@qte ]/@qte
 
 Q2.1) /top500:list/top500:site[ top500:rank/text() < 16 ]
 Q2.2) /top500:list/top500:site[contains(top500:computer, 'Myrinet')]
@@ -27,3 +27,10 @@ Q3.3) count(//top500:site/top500:country[ text() = 'China' ])
 Q3.4) //top500:site[ if count(//top500:country[ contains(text(), 'USA') ] >= 20 then true else false ]
 Q3.5) if (  count( //top500:country[ contains(text(), 'United States') ] ) > 20 ) then "Plus de 20 Machines" else "Moins de 20"
 Q3.6) every $computers in (/top500:list/top500:site/top500:computer)  satisfies ( $computers/following-sibling::top500:country[ contains(text(), 'China') ]/following-sibling::top500:year[ number(text()) > 2007 ] )
+
+Q4.1) count(/top500:list/top500:site[top500:country=current-grouping-key()])
+Q4.2) 
+Q4.3) 
+Q4.4) 
+Q4.5) 
+Q4.6)  
