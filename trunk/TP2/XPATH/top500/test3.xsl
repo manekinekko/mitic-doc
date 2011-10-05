@@ -11,7 +11,7 @@
 <!-- Placer l'EXPRESSION XPATH DANS LE SELECT CI-DESSOUS -->
 <!-- par exemple : la ville du premier site -->
 	<xsl:variable name="test" >
-		<xsl:value-of select="//top500:site[1]/top500:town"/>  
+		<xsl:value-of select="//top500:computer[contains(text(), 'Infiniband')]/preceding-sibling::top500:rank"/>  
 	</xsl:variable>
 	
 <!-- Produire une page XHTML -->
