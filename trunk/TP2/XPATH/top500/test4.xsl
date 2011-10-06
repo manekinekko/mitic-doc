@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
 <!-- DOC - TP XPath -->
 <!-- test4.xsl -->
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="2.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 	xmlns:top500="http://www.top500.org/xml/top500/1.0">
 	<xsl:output method="xml" version="1.0" indent="yes"	encoding="ISO-8859-15" 
@@ -24,7 +23,7 @@
 				</style>
 			</head>
 			<body>
-				<h1>Question 4 - binôme ??? </h1>
+				<h1>Question 4 - binÃŽme ??? </h1>
 				<p><strong>Top 500 </strong><xsl:value-of select="@date"/></p>
 				<table border="1" cellpadding='3' width="90%"  >
 					<tr>
@@ -37,19 +36,25 @@
 						<th class="col1" >Puissance maximale (<code>power</code>)</th>
 						<th class="col1" >Nombre total de processeurs</th>
 						<th class="col1" >Nombre moyen de processeurs</th>
-						<th class="col1" >Liste ville, état</th>
+						<th class="col1" >Liste ville, Ã©tat</th>
 					</tr>
-					<xsl:for-each-group select="top500:site" group-by="top500:country">
+					<xsl:for-each-group select="top500:site" group-by="top500:country" >
 						<tr>
-<!-- 	Placer l'EXPRESSION XPATH DANS CHAQUE SELECT ci-dessous 
-		pour répondre aux questions de la partie 4 du TP XPath -->
 							<td><xsl:value-of select="top500:country" /></td>
-							<td><xsl:value-of select="$req" /></td>
-							<td><xsl:value-of select="$req" separator=" "/></td>
-							<td><xsl:value-of select="$req" /></td>
-							<td> <xsl:value-of select="$req" /></td>
-							<td> <xsl:value-of select="$req" /></td>
-							<td><xsl:value-of select="$req" /></td>
+							<td><xsl:value-of select="count(current-group())" /></td>
+							<td><xsl:value-of select="distinct-values(current-group()/top500:manufacturer)" separator=", "/></td>
+							<td><xsl:value-of select="max(current-group()/top500:power)" /></td>
+							<td><xsl:value-of select="sum(current-group()/top500:number-of-processors)" /></td>
+							<td><xsl:value-of select="avg(current-group()/top500:number-of-processors)" /></td>
+							<td><xsl:value-of select="for $group in current-group() return 
+															if ( $group/top500:town/text() != '' ) then
+																distinct-values(text())
+															else 
+																if ( $group/top500:state/text() != '' ) then
+																	distinct-values($group/top500:state/text())
+																else 
+																	''
+														" separator=", "/></td>
 						</tr>
 					</xsl:for-each-group>
 				</table>	
