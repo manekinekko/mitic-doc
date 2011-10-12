@@ -8,7 +8,7 @@ Q1.5.a) /recettes/recette//ingredient[not(@unit = preceding::*/@unit)]/@unit
 Q1.5.b) distinct-values(/recettes/recette//ingredient/@unit)
 Q1.6) /recettes/recette[ceiling(count(/recettes/recette) div 2)]
 Q1.7) /recettes/recette[ count(ingredient) > 6 ]
-Q1.8) //ingredient[ contains(@nom, 'eggs') > preceding::ingredient[contains(@nom, 'eggs')]/@qte ]/@qte
+Q1.8) //ingredient[ contains(@nom, 'eggs') > preceding::ingredient[contains(@nom, 'eggs')]/@qte ]/parent::ingredient/preceding-sibling::nom/text()
 
 Q2.1) /top500:list/top500:site[ top500:rank/text() < 16 ]
 Q2.2) /top500:list/top500:site[contains(top500:computer, 'Myrinet')]
