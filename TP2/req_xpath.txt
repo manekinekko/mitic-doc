@@ -1,13 +1,13 @@
 DOC MITIC TP2
 
-Q1.1) //ingredient[attribute::nom='flour']/@qte
-Q1.2) sum(//ingredient[contains(@nom, 'eggs')]/@qte)
-Q1.3) //ingredient[ (@unit="tablespoon" or @unit="teaspoon") and @qte='0.5' ]/@nom
-Q1.4) //recette/nom[text()="Cailles en Sarcophages"]/following-sibling::ingredient//ingredient[@nom="stock"]/preparation/pas[2]
-Q1.5.a) //ingredient[not(@unit = preceding::*/@unit)]/@unit
-Q1.5.b) 
-Q1.6) //recette[ceiling(count(//recette) div 2)]
-Q1.7) //recette[ count(ingredient) > 6 ]
+Q1.1) /recettes/recette//ingredient[attribute::nom='flour']/@qte
+Q1.2) sum(/recettes/recette//ingredient[contains(@nom, 'eggs')]/@qte)
+Q1.3) /recettes/recette//ingredient[ (@unit="tablespoon" or @unit="teaspoon") and @qte='0.5' ]/@nom
+Q1.4) /recettes/recette/nom[text()="Cailles en Sarcophages"]/following-sibling::ingredient//ingredient[@nom="stock"]/preparation/pas[2]
+Q1.5.a) /recettes/recette//ingredient[not(@unit = preceding::*/@unit)]/@unit
+Q1.5.b) distinct-values(/recettes/recette//ingredient/@unit)
+Q1.6) /recettes/recette[ceiling(count(/recettes/recette) div 2)]
+Q1.7) /recettes/recette[ count(ingredient) > 6 ]
 Q1.8) //ingredient[ contains(@nom, 'eggs') > preceding::ingredient[contains(@nom, 'eggs')]/@qte ]/@qte
 
 Q2.1) /top500:list/top500:site[ top500:rank/text() < 16 ]
@@ -21,10 +21,10 @@ Q2.8) /top500:list/top500:site[contains(top500:computer, 'Itanium') and not(cont
 Q2.9) /top500:list/top500:site[contains(top500:computer, 'Xeon') and contains(top500:manufacturer, 'Hewlett-Packard') and not(contains(top500:country, 'United States'))]
 Q2.10) /top500:list/top500:site[contains(top500:computer, 'Xeon') and top500:number-of-processors > 1000]
 
-Q3.1) //top500:computer[contains(text(), 'Infiniband')]/preceding-sibling::top500:rank
+Q3.1) /top500:list/top500:site/top500:computer[contains(text(), 'Infiniband')]/preceding-sibling::top500:rank
 Q3.2) /top500:list/top500:site/top500:manufacturer[contains(text(), 'Fujistu') or contains(text(), 'Hitachi') or contains(text(), 'Nec') ]/following-sibling::top500:country
-Q3.3) count(//top500:site/top500:country[ text() = 'China' ])
-Q3.4) if (  count( //top500:country[ contains(text(), 'United States') ] ) > 20 ) then "Plus de 20 Machines" else "Moins de 20"
+Q3.3) count(/top500:list/top500:site/top500:country[ text() = 'China' ])
+Q3.4) if (  count( /top500:list/top500:site/top500:country[ contains(text(), 'United States') ] ) > 20 ) then "Plus de 20 Machines" else "Moins de 20"
 Q3.5) every $computers in (/top500:list/top500:site/top500:computer)  satisfies ( $computers/following-sibling::top500:country[ contains(text(), 'China') ]/following-sibling::top500:year[ number(text()) > 2007 ] )
 Q3.6) 
 
