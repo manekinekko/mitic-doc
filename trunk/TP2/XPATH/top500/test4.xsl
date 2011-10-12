@@ -46,15 +46,9 @@
 							<td><xsl:value-of select="max(current-group()/top500:power)" /></td>
 							<td><xsl:value-of select="sum(current-group()/top500:number-of-processors)" /></td>
 							<td><xsl:value-of select="avg(current-group()/top500:number-of-processors)" /></td>
-							<td><xsl:value-of select="for $group in current-group() return 
-															if ( $group/top500:town/text() != '' ) then
-																distinct-values(text())
-															else 
-																if ( $group/top500:state/text() != '' ) then
-																	distinct-values($group/top500:state/text())
-																else 
-																	''
-														" separator=", "/></td>
+							<td><xsl:value-of select="distinct-values(for $group in current-group() return 
+															string-join( ( $group/top500:town, $group/top500:state ), ', ')
+														)" separator=" - "/></td>
 						</tr>
 					</xsl:for-each-group>
 				</table>	
