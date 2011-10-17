@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="DOCBOOK" default="apply-xsl" basedir=".">
+	<target name="apply-xsl">
+		<xslt in="nutrition.xml" out="table.htm" style="nutrition2trie.xsl">
+		</xslt>
+	</target>
+</project>
