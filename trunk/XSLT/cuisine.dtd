@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT ingredient (ingredient*, preparation?)>
+<!ATTLIST ingredient
+	nom CDATA #REQUIRED
+	qte CDATA #IMPLIED
+	unit CDATA #IMPLIED
+>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT nutrition EMPTY>
+<!ATTLIST nutrition
+	calories CDATA #REQUIRED
+	gras CDATA #REQUIRED
+	glucides CDATA #REQUIRED
+	proteines CDATA #REQUIRED
+	alcool CDATA #IMPLIED
+>
+<!ELEMENT pas (#PCDATA)>
+<!ELEMENT preparation (pas+)>
+<!ELEMENT recette (nom, ingredient+, preparation, note?, nutrition)>
+<!ELEMENT recettes (description, recette+)>

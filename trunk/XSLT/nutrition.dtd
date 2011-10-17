@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT nutrition (plat+)>
+<!ATTLIST plat
+	nom CDATA #REQUIRED
+	alcool CDATA #REQUIRED
+	proteines CDATA #REQUIRED
+	gras CDATA #REQUIRED
+	calories CDATA #REQUIRED
+	glucides CDATA #IMPLIED
+>
+<!ELEMENT plat EMPTY>
+

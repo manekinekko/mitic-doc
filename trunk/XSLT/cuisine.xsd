@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="description" type="xs:string"/>
+	<xs:element name="ingredient">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ingredient" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="preparation" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="nom" type="xs:string" use="required"/>
+			<xs:attribute name="qte" type="xs:positiveInteger"/>
+			<xs:attribute name="unit">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="can"/>
+						<xs:enumeration value="cup"/>
+						<xs:enumeration value="jar"/>
+						<xs:enumeration value="ounce"/>
+						<xs:enumeration value="package"/>
+						<xs:enumeration value="pound"/>
+						<xs:enumeration value="ribs"/>
+						<xs:enumeration value="tablespoon"/>
+						<xs:enumeration value="teaspoon"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nom" type="xs:string"/>
+	<xs:element name="note" type="xs:string"/>
+	<xs:element name="nutrition">
+		<xs:complexType>
+			<xs:attribute name="calories" type="xs:positiveInteger" use="required" />
+			<xs:attribute name="gras" type="xs:positiveInteger" use="required" />
+			<xs:attribute name="glucides" type="xs:positiveInteger" use="required" />
+			<xs:attribute name="proteines" type="xs:positiveInteger" use="required"/>
+			<xs:attribute name="alcool" type="xs:positiveInteger" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pas" type="xs:string"/>
+	<xs:element name="preparation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="pas" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="recette">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom"/>
+				<xs:element ref="ingredient" maxOccurs="unbounded"/>
+				<xs:element ref="preparation"/>
+				<xs:element ref="note" minOccurs="0"/>
+				<xs:element ref="nutrition"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="recettes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description"/>
+				<xs:element ref="recette" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
