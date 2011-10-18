@@ -3,14 +3,20 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="xml" version="1.0" indent="yes"
-		encoding="UTF-8" />
+		encoding="UTF-8" doctype-system="nutrition.dtd"/>
 
-	<xsl:template match="/recettes/recette">
-		
+	<xsl:template match="/recettes">
 		<nutrition>
 			
-			<xsl:for-each-group select="nutrition" group-by="nutrition">
-				<plat nom="{current-group()/nom/text()}">
+			<xsl:for-each-group select="recette/nutrition" group-by="@calories">
+				<plat 
+					nom="{current-group()/parent::recette/nom/text()}"
+					calories="{@calories}"
+					gras="{@gras}" 
+					glucides="{@glucides}" 
+					proteines="{@proteines}"
+					alcool="{ if ( @alcool ) then @alcool else '0' }"
+				>
 				</plat>
 			</xsl:for-each-group>
 
