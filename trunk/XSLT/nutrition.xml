@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-     Quelques exemples de recettes (en anglais)
-  <nutrition/>
-<nutrition/>
-<nutrition/>
-<nutrition/>
-<nutrition/>
+<!DOCTYPE nutrition
+  SYSTEM "nutrition.dtd">
+<nutrition>
+   <plat nom="Beef Parmesan with Garlic Angel Hair Pasta" calories="1167" gras="23"
+         glucides="45"
+         proteines="32"
+         alcool="0"/>
+   <plat nom="Ricotta Pie" calories="349" gras="18" glucides="64" proteines="18"
+         alcool="0"/>
+   <plat nom="Linguine Pescadoro" calories="532" gras="12" glucides="59" proteines="29"
+         alcool="0"/>
+   <plat nom="Zuppa Inglese" calories="612" gras="49" glucides="45" proteines="4"
+         alcool="2"/>
+   <plat nom="Cailles en Sarcophages" calories="8892" gras="33" glucides="28"
+         proteines="39"
+         alcool="0"/>
+</nutrition>
