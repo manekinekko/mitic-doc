@@ -28,35 +28,30 @@
 							</a>
 						</li>
 					</xsl:for-each-group>
-					<il>
+					<li>
 						<a href="#tableau-nutritionnelle">Tableau des valeurs nutritionnelles</a>
-					</il>
+					</li>
 				</ol>
 
-				
+
 				<ul>
-				<xsl:for-each-group select="recette" group-by="nom">
-					<li>
-						<h2><xsl:value-of select="nom" /></h2>
-						
-						<ul>
-							<xsl:for-each-group select="current-group()/ingredient" group-by="@nom">
-							<li>
-								<xsl:value-of select="@qte" />
-								<xsl:value-of select="@unit" />
-								 of 
-								<xsl:value-of select="@nom" />
-							</li>
-							</xsl:for-each-group>
-						</ul>
-						
-					</li>
-				</xsl:for-each-group>
+					<xsl:for-each-group select="recette" group-by="nom">
+						<li>
+							<h2>
+								<xsl:value-of select="nom" />
+							</h2>
+
+							<ul>
+								<xsl:call-template name="ingredient" />
+							</ul>
+							
+						</li>
+					</xsl:for-each-group>
 				</ul>
-				
 
 
-				<!-- tableau valeurs nutritionnelles-->
+
+				<!-- tableau valeurs nutritionnelles -->
 				<a id="tableau-nutritionnelle" />
 				<table>
 					<caption>
@@ -113,6 +108,36 @@
 			</body>
 		</html>
 
-
 	</xsl:template>
+
+	<xsl:template match="ingredient" name="ingredient">
+
+		<li>
+			<xsl:value-of select="@qte" />
+			<xsl:text> #### </xsl:text>
+			<xsl:value-of select="@nom" />
+			<xsl:if test="count(ingredient) &gt; 0">
+				<ul>
+					<xsl:apply-templates select="ingredient" />
+				</ul>
+			</xsl:if>
+			
+			<xsl:if test=" count(preparation/pas) &gt; 0 ">
+			<ol>
+				<xsl:apply-templates select="pas" />
+			</ol>
+			</xsl:if>
+
+		</li>
+	
+	</xsl:template>
+	
+	<xsl:template match="pas" name="pas">
+		
+		<li>
+			<xsl:value-of select="."></xsl:value-of>
+		</li>
+	
+	</xsl:template>
+
 </xsl:stylesheet>
