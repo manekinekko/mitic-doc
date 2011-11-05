@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="DOCBOOK" default="apply-xsl" basedir=".">
+	<target name="apply-xsl">
+		<xslt includes="cuisine.xml" destdir="recette" style="cuisine2site.xsl">
+			<classpath location="saxon9he.jar" />
+		</xslt>
+	</target>
+</project>
