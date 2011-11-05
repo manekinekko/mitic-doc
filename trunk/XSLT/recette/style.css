@@ -1,0 +1,92 @@
+@CHARSET "utf-8";
+
+body {
+	font-family: "Verdana", "Arial";
+	text-align: center;
+	font-size: 1em;
+	font-family: "Verdana", "Arial";
+	font-size: 1em;
+	padding: 0 20px;
+	text-align: center;
+	width: 800px;
+	position: relative;
+	margin-left: 50%;
+	left: -400px;
+}
+
+body.doc-recette {
+	border: none;
+	border-left: 10px solid green;
+	border-right: 10px solid green;
+}
+
+/* Le titres */
+h1.doc-index-title {
+    color: #AEAEAE;
+    font-size: 1.1em;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+h1.doc-recette-title {
+	color: green;
+	font-size: 1.4em;
+}
+
+h1.doc-nutrition-title {
+	color: #CC0000;
+}
+
+/* Les listes */
+ol.doc-index-index {
+	left: -200px;
+	list-style: upper-roman outside none;
+	margin-left: 50%;
+	position: relative;
+	text-align: left;
+	width: 400px;
+	font-style: italic;
+	color: #001590;
+}
+
+ol.doc-index-index a {
+	font-weight: bolder;
+	text-decoration: none;
+	color: #001590;
+	font-style: normal;
+}
+
+ul.doc-recette-ingredient {
+	list-style: square outside none;
+	text-align: left;
+}
+
+ul.doc-recette-ingredient ul {
+	list-style: disc outside none;
+}
+
+ol.doc-recette-preparation {
+	list-style: lower-greek;
+	color: green;
+	font-style: italic;
+	text-align: left;
+}
+
+ol.doc-recette-preparation li:first-letter {
+	font-weight: bolder;
+}
+
+/* Tables */
+table.doc-nutrition-table {
+	color: #CC0000;
+	border: 10px solid green;
+}
+
+table.doc-nutrition-table th {
+	font-weight: bolder;
+}
+
+table.doc-nutrition-table th, table.doc-nutrition-table td {
+	margin: 5px;
+	border: 2px solid purple;
+}
