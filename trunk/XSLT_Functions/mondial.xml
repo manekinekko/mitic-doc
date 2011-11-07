@@ -316,7 +316,7 @@
       <border country="BG" length="318"/>
       <border country="MK" length="62"/>
       <border country="HR" length="241"/>
-      <border country="BIH" length="357"/>
+      <border country="BIH" length="302"/>
       <border country="MNE" length="124"/>
       <border country="KOS" length="352"/>
       <city id="city-Belgrade-SRB-SRB" is_country_cap="yes"
@@ -352,7 +352,7 @@
       <languages percentage="5.3">Albanian</languages>
       <border country="HR" length="25"/>
       <border country="SRB" length="124"/>
-      <border country="BIH" length="249"/>
+      <border country="BIH" length="225"/>
       <border country="AL" length="172"/>
       <border country="KOS" length="79"/>
       <city id="city-Podgorica-MNE-MNE" is_country_cap="yes" country="MNE">
@@ -1237,7 +1237,7 @@
       </province>
       <province id="prov-cid-cia-Austria-3" capital="cty-cid-cia-Austria-Klagenfurt"
                 country="A">
-         <name>Karnten</name>
+         <name>Carinthia</name>
          <area>9533</area>
          <population>559000</population>
          <city id="cty-cid-cia-Austria-Klagenfurt" is_state_cap="yes" country="A"
@@ -1261,7 +1261,7 @@
          </city>
       </province>
       <province id="prov-cid-cia-Austria-5" capital="cty-Austria-Vienna" country="A">
-         <name>Vienna-Wien</name>
+         <name>Vienna</name>
          <area>415</area>
          <population>1583000</population>
          <city id="cty-Austria-Vienna" is_country_cap="yes" is_state_cap="yes" country="A"
@@ -1274,7 +1274,7 @@
          </city>
       </province>
       <province id="prov-cid-cia-Austria-6" capital="cty-cid-cia-Austria-4" country="A">
-         <name>Oberosterreich</name>
+         <name>Upper Austria</name>
          <area>11979</area>
          <population>1373000</population>
          <city id="cty-cid-cia-Austria-4" is_state_cap="yes" country="A"
@@ -1287,7 +1287,7 @@
          </city>
       </province>
       <province id="prov-cid-cia-Austria-7" capital="cty-cid-cia-Austria-6" country="A">
-         <name>Tirol</name>
+         <name>Tyrol</name>
          <area>12647</area>
          <population>649000</population>
          <city id="cty-cid-cia-Austria-6" is_state_cap="yes" country="A"
@@ -1300,7 +1300,7 @@
          </city>
       </province>
       <province id="prov-cid-cia-Austria-8" capital="cty-cid-cia-Austria-3" country="A">
-         <name>Steiermark</name>
+         <name>Styria</name>
          <area>16386</area>
          <population>1203000</population>
          <city id="cty-cid-cia-Austria-3" is_state_cap="yes" country="A"
@@ -1327,7 +1327,7 @@
       </province>
       <province id="prov-cid-cia-Austria-10" capital="cty-cid-cia-Austria-St-Polten"
                 country="A">
-         <name>Niederosterreich</name>
+         <name>Lower Austria</name>
          <area>19170</area>
          <population>1507000</population>
          <city id="cty-cid-cia-Austria-St-Polten" is_state_cap="yes" country="A"
@@ -2821,7 +2821,7 @@
       <border country="FL" length="41"/>
       <province id="prov-cid-cia-Switzerland-2" capital="cty-cid-cia-Switzerland-Aarau"
                 country="CH">
-         <name>Aargau</name>
+         <name>AG</name>
          <area>1403</area>
          <population>528887</population>
          <city id="cty-cid-cia-Switzerland-Aarau" is_state_cap="yes" country="CH"
@@ -2832,7 +2832,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-3" capital="cty-cid-cia-Switzerland-Herisau"
                 country="CH">
-         <name>Appenzell Ausserrhoden</name>
+         <name>AR</name>
          <area>242</area>
          <population>54104</population>
          <city id="cty-cid-cia-Switzerland-Herisau" is_state_cap="yes" country="CH"
@@ -2842,7 +2842,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-4" capital="cty-cid-cia-Switzerland-Appenzell"
                 country="CH">
-         <name>Appenzell Innerrhoden</name>
+         <name>AI</name>
          <area>172</area>
          <population>14750</population>
          <city id="cty-cid-cia-Switzerland-Appenzell" is_state_cap="yes" country="CH"
@@ -2852,7 +2852,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-5" capital="cty-cid-cia-Switzerland-Liestal"
                 country="CH">
-         <name>Basel-Land</name>
+         <name>BL</name>
          <area>517</area>
          <population>252331</population>
          <city id="cty-cid-cia-Switzerland-Liestal" is_state_cap="yes" country="CH"
@@ -2862,7 +2862,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-6" capital="cty-cid-cia-Switzerland-3"
                 country="CH">
-         <name>Basel-Stadt</name>
+         <name>BS</name>
          <area>37</area>
          <population>195759</population>
          <city id="cty-cid-cia-Switzerland-3" is_state_cap="yes" country="CH"
@@ -2874,7 +2874,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-7" capital="cty-cid-cia-Switzerland-5"
                 country="CH">
-         <name>Bern</name>
+         <name>BE</name>
          <area>5960</area>
          <population>941952</population>
          <city id="cty-cid-cia-Switzerland-5" is_country_cap="yes" is_state_cap="yes"
@@ -2894,7 +2894,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-8" capital="cty-cid-cia-Switzerland-Fribourg"
                 country="CH">
-         <name>Fribourg</name>
+         <name>FR</name>
          <area>1670</area>
          <population>224552</population>
          <city id="cty-cid-cia-Switzerland-Fribourg" is_state_cap="yes" country="CH"
@@ -2904,7 +2904,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-9" capital="cty-cid-cia-Switzerland-4"
                 country="CH">
-         <name>Geneve</name>
+         <name>GE</name>
          <area>282</area>
          <population>395466</population>
          <city id="cty-cid-cia-Switzerland-4" is_state_cap="yes" country="CH"
@@ -2919,7 +2919,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-10" capital="cty-cid-cia-Switzerland-Glarus"
                 country="CH">
-         <name>Glarus</name>
+         <name>GL</name>
          <area>685</area>
          <population>39410</population>
          <city id="cty-cid-cia-Switzerland-Glarus" is_state_cap="yes" country="CH"
@@ -2929,7 +2929,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-11" capital="cty-cid-cia-Switzerland-Chur"
                 country="CH">
-         <name>Graubunden</name>
+         <name>GR</name>
          <area>7105</area>
          <population>185063</population>
          <city id="cty-cid-cia-Switzerland-Chur" is_state_cap="yes" country="CH"
@@ -2940,7 +2940,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-12" capital="cty-cid-cia-Switzerland-Delemont"
                 country="CH">
-         <name>Jura</name>
+         <name>JU</name>
          <area>836</area>
          <population>69188</population>
          <city id="cty-cid-cia-Switzerland-Delemont" is_state_cap="yes" country="CH"
@@ -2950,7 +2950,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-13" capital="cty-cid-cia-Switzerland-9"
                 country="CH">
-         <name>Luzern</name>
+         <name>LU</name>
          <area>1493</area>
          <population>340536</population>
          <city id="cty-cid-cia-Switzerland-9" is_state_cap="yes" country="CH"
@@ -2963,7 +2963,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-14" capital="cty-cid-cia-Switzerland-Neuchatel"
                 country="CH">
-         <name>Neuchatel</name>
+         <name>NE</name>
          <area>803</area>
          <population>165258</population>
          <city id="cty-cid-cia-Switzerland-Neuchatel" is_state_cap="yes" country="CH"
@@ -2973,7 +2973,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-15" capital="cty-cid-cia-Switzerland-Stans"
                 country="CH">
-         <name>Nidwalden</name>
+         <name>NW</name>
          <area>276</area>
          <population>36466</population>
          <city id="cty-cid-cia-Switzerland-Stans" is_state_cap="yes" country="CH"
@@ -2983,7 +2983,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-16" capital="cty-cid-cia-Switzerland-Sarnen"
                 country="CH">
-         <name>Obwalden</name>
+         <name>OW</name>
          <area>490</area>
          <population>31310</population>
          <city id="cty-cid-cia-Switzerland-Sarnen" is_state_cap="yes" country="CH"
@@ -2993,7 +2993,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-17" capital="cty-cid-cia-Switzerland-8"
                 country="CH">
-         <name>Sankt Gallen</name>
+         <name>SG</name>
          <area>2025</area>
          <population>442350</population>
          <city id="cty-cid-cia-Switzerland-8" is_state_cap="yes" country="CH"
@@ -3004,7 +3004,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-18" capital="cty-cid-cia-Switzerland-Schaffhausen"
                 country="CH">
-         <name>Schaffhausen</name>
+         <name>SH</name>
          <area>298</area>
          <population>74035</population>
          <city id="cty-cid-cia-Switzerland-Schaffhausen" is_state_cap="yes" country="CH"
@@ -3015,7 +3015,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-19" capital="cty-cid-cia-Switzerland-Schwyz"
                 country="CH">
-         <name>Schwyz</name>
+         <name>SZ</name>
          <area>908</area>
          <population>122409</population>
          <city id="cty-cid-cia-Switzerland-Schwyz" is_state_cap="yes" country="CH"
@@ -3025,7 +3025,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-20" capital="cty-cid-cia-Switzerland-Solothurn"
                 country="CH">
-         <name>Solothurn</name>
+         <name>SO</name>
          <area>790</area>
          <population>239264</population>
          <city id="cty-cid-cia-Switzerland-Solothurn" is_state_cap="yes" country="CH"
@@ -3036,7 +3036,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-21" capital="cty-cid-cia-Switzerland-Frauenfeld"
                 country="CH">
-         <name>Thurgau</name>
+         <name>TG</name>
          <area>990</area>
          <population>223372</population>
          <city id="cty-cid-cia-Switzerland-Frauenfeld" is_state_cap="yes" country="CH"
@@ -3046,7 +3046,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-22" capital="cty-cid-cia-Switzerland-Bellinzona"
                 country="CH">
-         <name>Tessin</name>
+         <name>TI</name>
          <area>2812</area>
          <population>305199</population>
          <city id="cty-cid-cia-Switzerland-Bellinzona" is_state_cap="yes" country="CH"
@@ -3057,7 +3057,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-23" capital="cty-cid-cia-Switzerland-Altdorf"
                 country="CH">
-         <name>Uri</name>
+         <name>UR</name>
          <area>1076</area>
          <population>35876</population>
          <city id="cty-cid-cia-Switzerland-Altdorf" is_state_cap="yes" country="CH"
@@ -3068,7 +3068,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-24" capital="cty-cid-cia-Switzerland-Sion"
                 country="CH">
-         <name>Valais</name>
+         <name>VS</name>
          <area>5224</area>
          <population>271291</population>
          <city id="cty-cid-cia-Switzerland-Sion" is_state_cap="yes" country="CH"
@@ -3079,7 +3079,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-25" capital="cty-cid-cia-Switzerland-6"
                 country="CH">
-         <name>Vaud</name>
+         <name>VD</name>
          <area>3211</area>
          <population>605677</population>
          <city id="cty-cid-cia-Switzerland-6" is_state_cap="yes" country="CH"
@@ -3091,7 +3091,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-26" capital="cty-cid-cia-Switzerland-Zug"
                 country="CH">
-         <name>Zug</name>
+         <name>ZG</name>
          <area>238</area>
          <population>92392</population>
          <city id="cty-cid-cia-Switzerland-Zug" is_state_cap="yes" country="CH"
@@ -3101,7 +3101,7 @@
       </province>
       <province id="prov-cid-cia-Switzerland-27" capital="cty-cid-cia-Switzerland-2"
                 country="CH">
-         <name>Zurich</name>
+         <name>ZH</name>
          <area>1728</area>
          <population>1175457</population>
          <city id="cty-cid-cia-Switzerland-2" is_state_cap="yes" country="CH"
@@ -5788,8 +5788,8 @@
       <religions percentage="31">Christian Orthodox</religions>
       <religions percentage="15">Roman Catholic</religions>
       <languages percentage="99">Serbo-Croatian</languages>
-      <border country="SRB" length="357"/>
-      <border country="MNE" length="249"/>
+      <border country="SRB" length="302"/>
+      <border country="KOS" length="225"/>
       <border country="HR" length="932"/>
       <city id="cty-cid-cia-Bosnia-and-Herzegovina-Sarajevo" is_country_cap="yes"
             country="BIH">
