@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+      "http://www.w3.org/TR/2001/REC-SVG-20050904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.0" width="800" height="400">
+  <title>Forme</title>
+  <desc>Contour en courbes de Bézier cubiques(b-spline)</desc>
+   <defs>
+    <path id="animal" stroke="black" fill="grey"
+          d="M 0 0 c 40 48 120 -32 160 -6 
+               c 0 0 5 4 10 -3 c 10 -103 50 -83 90 -42 
+               c 0 0 20 12 30 7 c -2 12 -18 17 -40 17 
+               c -55 -2 -40 25 -20 35 c 30 20 35 65 -30 71
+               c -50 4 -170 4 -200 -79 z"/>
+   </defs>
+   <g>
+     <use xlink:href="#animal" transform="translate(40,200) scale(1.5)" />
+  </g>
+  <text x="100" y="350" font-size="24">Animal tracé en courbes B-spline</text>
+</svg>
