@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!-- annee.xml -->
+<?xml-stylesheet type="text/xsl" href="annee2html.xsl" ?>
+<annee>
+	<mois nom="janvier" numero="1">13</mois>
+	<mois nom="février" numero="2">22</mois>
+	<mois nom="mars" numero="3">15</mois>
+	<mois nom="avril" numero="4">23</mois>
+	<mois nom="mai" numero="5">4</mois>
+	<mois nom="juin" numero="6">5</mois>
+	<mois nom="juillet" numero="7">35</mois>
+	<mois nom="août" numero="8">55</mois>
+	<mois nom="septembre" numero="9">90</mois>
+	<mois nom="octobre" numero="10">80</mois>
+	<mois nom="novembre" numero="11">65</mois>
+	<mois nom="décembre" numero="12">29</mois>
+</annee>

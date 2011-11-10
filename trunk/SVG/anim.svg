@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+       "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created by amaya, see http://www.w3.org/Amaya/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="350"
+     height="300">
+  <title>WAM logo (animated)</title>
+  <desc>An animated version of the logo of project WAM</desc>
+  <g transform="scale(.5)">
+    <!-- define a symbol (a polygon) to draw both the 'W' and the 'M' -->
+    <defs>
+      <symbol id="W">
+        <polygon
+                 points="0,0 60,260 136,260 170,132 204,260 280,260 340,0   
+                       264,0 238,124 210,0 130,0 102,124 76,0"/>
+      </symbol>
+    </defs>
+    <!-- The 'W' fades in slowly -->
+    <use id="letter-W" xlink:href="#W" style="fill:#ea2020; opacity:0"
+         transform="translate(20,100)">
+      <animate attributeName="opacity" attributeType="CSS" begin="0s"
+               dur="10s" from="0" to="1" fill="freeze"/>
+    </use>
+    <!-- The 'M' first coincides with the 'W', but after a few seconds
+                 it starts rotating and moving to its final position -->
+    <use id="letter-M" xlink:href="#W" style="fill:#ea2020; opacity:0"
+         transform="translate(20,100)">
+      <!-- ***** on the statement below dur should be 4s ****** -->
+      <animate attributeName="opacity" attributeType="CSS" begin="0s"
+               dur="2s" from="0" to="1" fill="freeze"/>
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="translate" from="20,100" to="686,360"
+                        begin="2s" dur="6s" fill="freeze"/>
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="rotate" from="0" to="180" begin="2s" dur="6s"
+                        additive="sum" fill="freeze"/>
+    </use>
+    <!-- The '@' grows and changes color slowly from very light to dark blue -->
+    <g id="letter-ARO" style="fill:#104080"
+      transform="translate(160,0) scale(0.0000001)">
+      <!-- scale(0) would be better, but the Adobe SVG viewer does not
+            	          support it -->
+      <!-- the loop around the 'a' is defined as a closed path -->
+      <path d="M 292 125 L 257 284 C 252 302 257 314 271 320 C 292 328 316.5 307 327.5 296 C 339.5 285 352.5 266.5 364 239 C 370.5 223 375.5 194 373 173 C 368 127.5 356.5 101 333 73 C 320 57 299 39 269 31 C 257 27 230 24 219 26 C 175 29 154 36 118 59 C 100 69 69 102 59 120 C 48 137 33.5 168 29 200.5 C 23.5 241 25 261 33 291.5 C 39 317.5 59 355 79.5 378 C 100.5 400 136 417 157 423 C 195 433.5 231.5 429 262.5 421.5 C 295 413 323.5 394 339.5 382 C 358.5 366.5 370.5 349.5 378.5 336.5 C 381.5 329.5 387 322 393.5 302 L 405.5 302 C 398.5 324.5 393 335 381 353.5 C 361 381.5 337 400 312 415 C 287.5 428.5 271.5 434 237 440.5 C 210 444 180 442 163 439 C 141 434 108.5 422 80 400 C 53.5 378 36 349 21 311 C 15.5 294 9 264.5 10.5 237 C 14.5 176 23.5 148.5 51 106 C 66 82 103 49 137 34.5 C 176 17.5 204 13 244.5 15 C 279 19 304 30.5 320 43.5 C 363.5 78 380.5 123 385.5 171 C 389 205.5 382.5 236.5 364 268.5 C 354 285.5 337.5 309 308 326 C 293 335 277 337 258 333 C 238 328 222 307 227 284 L 264 125 L 292 125 z"/>
+      <!-- the "ellipse" representing the inner part of the '@' -->
+      <path
+            d="M 250 187.5 C 251.5 165.5 247 152 239 142 C 230.5 132 218 131 211 132 C 195 133 174.5 152 166.5 162 C 152.5 177 134.5 215.5 129.5 235.5 C 124.5 249.5 118 281 128 299 C 131 305 140 311 148 311 C 157 311 168 305 178 299 C 191 291 207.5 277 220 261 C 227 252 237.5 234 242 220 L 251 220 C 246.5 234.5 232.5 261 222.5 273.5 C 208.5 292.5 192 308 181.5 315.5 C 165 328 143.5 334 126.5 328 C 105.5 318.5 93 304 92 273 C 91 247 107.5 204.5 119.5 186.5 C 129.5 170.5 149 147.5 166 137.5 C 180 127.5 200 121 211 122 C 232 122 241.5 130 247.5 137.5 C 258.5 151.5 260.5 166.5 258.5 188 L 250.5 188 L 250 187.5 z"/>
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="translate" from="340,228" to="160,0" begin="3s"
+                        dur="5s" fill="freeze"/>
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="scale" from="0" to="1" begin="3s" dur="5s"
+                        additive="sum" fill="freeze"/>
+      <animateColor attributeName="fill" attributeType="CSS"
+                    from="rgb(248,252,255)" to="rgb(121,149,182)" begin="3s"
+                    dur="7s" fill="freeze"/>
+    </g>
+  </g>
+</svg>
