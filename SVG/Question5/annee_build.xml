@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="DOCBOOK" default="apply-xsl" basedir=".">
 	<target name="apply-xsl">
-		<xslt in="annee.xml" out="histo2.svg" style="histo2.xsl">
-			<classpath location="saxon9he.jar" />
+		<xslt in="../annee.xml" out="annee.svg" style="annee.xsl">
+			<classpath location="../saxon9he.jar" />
 		</xslt>
 	</target>
 </project>
