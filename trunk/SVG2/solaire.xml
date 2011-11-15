@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systeme_solaire>
+
+<etoile>
+	<nom>Soleil</nom>
+	<type_spectral>G2</type_spectral>
+	<age unit="milliard d'annees">5</age>
+</etoile>
+
+<planete type="tellurique">
+	<nom>Mercure</nom>
+	<distance unit="UA">0.4</distance>
+	<masse unit="masse terrestre">0.06</masse>
+	<diametre unit="diamètre terrestre">0.4</diametre>
+</planete>
+
+</systeme_solaire>
