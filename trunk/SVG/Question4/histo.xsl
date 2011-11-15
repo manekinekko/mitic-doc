@@ -5,7 +5,7 @@
 	<xsl:output method="xml" version="1.0" indent="yes"
 		encoding="UTF-8" />
 
-	<xsl:variable name="style" select="document('style.xml')" />
+	<xsl:variable name="style" select="document('../style.xml')" />
 
 	<xsl:template match="/">
 
