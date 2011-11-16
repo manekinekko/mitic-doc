@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="DOCBOOK" default="apply-xsl" basedir=".">
+	<target name="apply-xsl">
+		<xslt in="solaire.xml" out="solaireSVG.html" style="squelette-xml2svg.xslt">
+			<classpath location="../saxon9he.jar" />
+		</xslt>
+	</target>
+</project>
