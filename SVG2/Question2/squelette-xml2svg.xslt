@@ -90,7 +90,6 @@
 			</text>
 	
 			<xsl:variable name="ln" select=" count(child::*[ position() != last() ]/descendant-or-self::*) "/>
-			<xsl:value-of select="$ln"></xsl:value-of>
 			
 			<xsl:if test=" $ln &gt; 0 ">
 				<line x1="{$x + 5}" y1="{$y + $boxHeight}" x2="{$x + 5}" y2="{$y + ($rowHeight * ($ln+1.5)) -1}"
