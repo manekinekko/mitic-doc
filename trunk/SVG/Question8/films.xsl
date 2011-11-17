@@ -39,6 +39,8 @@
 									<xsl:variable name="y"
 										select="90 - sum($annees__/@number_films)" />
 									<xsl:variable name="h" select="sum($annees__/@number_films)" />
+									
+									<!-- on prend la 4eme couleur arbitrairement -->
 									<xsl:variable name="fill" select="$style/style/color[4]" />
 
 									<rect x="{ $x }" y="{ $y }" width="5" height="{ $h }"

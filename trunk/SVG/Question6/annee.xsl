@@ -24,7 +24,7 @@
 				</ul>
 
 				<h2>En histogramme</h2>
-				<img src="../Question4/annee.svg" alt="histogramme par mois"
+				<img src="../Question5/annee.svg" alt="histogramme par mois"
 					height="80%" width="80%" />
 			</body>
 

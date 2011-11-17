@@ -7,6 +7,7 @@
 		doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" />
 
 	<xsl:variable name="style" select="document('../style.xml')" />
+	<xsl:variable name="nb_mois" select="count(/annee/mois) * 10"></xsl:variable>
 
 	<xsl:template match="/">
 
@@ -28,7 +29,7 @@
 
 				<h2>En histogramme</h2>
 				<svg xmlns="http://www.w3.org/2000/svg" width="1000px" height="400px"
-					viewBox="0 0 70 110" preserveAspectRatio="yes">
+					viewBox="0 0 {$nb_mois} {$nb_mois}" preserveAspectRatio="yes">
 
 					<g>
 						<xsl:for-each-group select="annee/mois"
@@ -38,8 +39,7 @@
 								fill="{$style/style/color[ number(current-group()/@numero) ][position()]}"
 								stroke="black" />
 							<text x="{ (@numero * 10)}" y="{$y - 5}" font-size="5">
-								<xsl:value-of select="./text()" />
-								%
+								<xsl:value-of select="./text()" />%
 							</text>
 
 						</xsl:for-each-group>
