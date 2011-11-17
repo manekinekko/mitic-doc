@@ -102,7 +102,7 @@
 			</text>
 
 			<xsl:variable name="ln"
-				select=" count(child::*[ position() != last() ]/descendant-or-self::*) " />
+				select=" count(child::*[ position() != last() ]/descendant-or-self::* | child::*[ position() != last() ]/descendant-or-self::text()) " />
 
 			<xsl:if test=" $ln &gt; 0 or child::text() != ''">
 				<line x1="{$x + 5}" y1="{$y + $boxHeight}" x2="{$x + 5}"
