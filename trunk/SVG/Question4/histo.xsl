@@ -6,11 +6,12 @@
 		encoding="UTF-8" />
 
 	<xsl:variable name="style" select="document('../style.xml')" />
+	<xsl:variable name="nb_mois" select="count(/annee/mois) * 10"></xsl:variable>
 
 	<xsl:template match="/">
 
 		<svg xmlns="http://www.w3.org/2000/svg" width="1000px" height="400px"
-			viewBox="0 0 70 110" preserveAspectRatio="yes">
+			viewBox="0 0 {$nb_mois} {$nb_mois}" preserveAspectRatio="yes">
 
 			<g>
 				<xsl:for-each-group select="annee/mois" group-by="@numero">
