@@ -4,10 +4,7 @@
 	<etoile>
 		<nom>Soleil</nom>
 		<type_spectral>G2</type_spectral>
-		<age unit="milliard d'annees">
-			<age unit="milliard d'annees">5</age>
-			<age unit="milliard d'annees">5</age>
-		</age>
+		<age unit="milliard d'annees">5</age>
 	</etoile>
 
 	<planete type="tellurique">
