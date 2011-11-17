@@ -69,20 +69,20 @@
 		</xsl:variable>
 
 		<xsl:variable name="y"
-			select="$y0 + count( preceding::* | ancestor::* ) * ($rowHeight+5)"></xsl:variable>
+			select="$y0 + (count( preceding::* | ancestor::* ) * ($rowHeight))"></xsl:variable>
 		<xsl:variable name="x" select="$profondeur*10"></xsl:variable>
 
 		<xsl:if test=" $profondeur &gt; 0 ">
 
 			<!-- les lignes -->
 			<xsl:if test=" $profondeur &gt; 1 ">
-				<line x1="{$x - 5}" y1="{$y + ($rowHeight div 2)}" x2="{$x}" y2="{$y + ($rowHeight div 2)}"
-					style="stroke:rgb(0,0,0);stroke-width:1" />
+				<line x1="{$x - 5}" y1="{$y + ($boxHeight div 2)}" x2="{$x}" y2="{$y + ($boxHeight div 2)}"
+					style="stroke:black;stroke-width:1" />
 			</xsl:if>
 			
 			<!-- les rectangles -->
-			<rect x="{$x}" y="{$y}" width="{$width}" height="{$rowHeight}"
-				fill="white" stroke="black" />
+			<rect x="{$x}" y="{$y}" width="{$width}" height="{$boxHeight}"
+				fill-opacity="0.0" stroke="black" />
 			
 			<!-- les textes -->
 			<text font-family="ArialMT" font-size="12" x="{$x+2}" y="{$y+12}">
@@ -90,10 +90,11 @@
 			</text>
 	
 			<xsl:variable name="ln" select=" count(child::*[ position() != last() ]/descendant-or-self::*) "/>
+			<xsl:value-of select="$ln"></xsl:value-of>
 			
 			<xsl:if test=" $ln &gt; 0 ">
-				<line x1="{$x + 5}" y1="{$y + $rowHeight}" x2="{$x + 5}" y2="{$y + (($rowHeight+5) * ($ln+1.4) )}"
-				style="stroke:rgb(0,0,0);stroke-width:1" />
+				<line x1="{$x + 5}" y1="{$y + $boxHeight}" x2="{$x + 5}" y2="{$y + ($rowHeight * ($ln+1.5)) -1}"
+				style="stroke:black;stroke-width:1" />
 			</xsl:if>
 			
 		</xsl:if>
