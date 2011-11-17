@@ -65,8 +65,12 @@
 
 		<xsl:variable name="display">
 			<xsl:choose>
-				<xsl:when test="name() != ''"><xsl:value-of select="name()" /></xsl:when>
-				<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+				<xsl:when test="name() != ''">
+					<xsl:value-of select="name()" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="." />
+				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 
@@ -100,7 +104,7 @@
 			<xsl:variable name="ln"
 				select=" count(child::*[ position() != last() ]/descendant-or-self::*) " />
 
-			<xsl:if test=" $ln &gt; 0 ">
+			<xsl:if test=" $ln &gt; 0 or child::text() != ''">
 				<line x1="{$x + 5}" y1="{$y + $boxHeight}" x2="{$x + 5}"
 					y2="{$y + ($rowHeight * ($ln+1.5)) -1}" style="stroke:black;stroke-width:1" />
 			</xsl:if>
