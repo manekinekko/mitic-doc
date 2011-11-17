@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <!--
   - Author:  Lars Vogel
+  - Inspired from http://www.vogella.de/articles/DocBook/article.html#installation_sheets
   -->
 <project name="docbook-src" default="build-html">
 
 	<description>
-            This Ant buildhtml.xml file is used to transform DocBook XML to html output
+    This Ant buildhtml.xml file is used to transform DocBook XML to html and PDF output
     </description>
 
 	<!--
@@ -13,14 +14,24 @@
       -->
 	<property name="input.dir" value="input" />
 	<property name="output.dir" value="output" />
+	<property name="output.html.dir" value="${output.dir}/html" />
+	<property name="output.pdf.dir" value="${output.dir}/pdf" />
+	<property name="output.fo.dir" value="${output.dir}/fo" />
 	<property name="docbook.xsl.dir" value="docbook-xsl" />
 	<property name="html.stylesheet" value="${docbook.xsl.dir}/html/docbook.xsl" />
+	<property name="fo.stylesheet" value="${docbook.xsl.dir}/fo/docbook.xsl" />
+	<property name="fop.lib.dir" value="lib/fop-1.0" />
+	<property name="xalan.lib.dir" value="${fop.lib.dir}/lib"/>
 
 	<!-- Making saxon available -->
 	<path id="saxon.class.path">
 		<pathelement location="lib/saxon9he.jar" />
 	</path>
-
+	<path id="xalan.classpath">
+		<fileset dir="${xalan.lib.dir}" id="xalan.fileset">
+			<include name="*.jar" />
+		</fileset>
+	</path>
 
 	<!--
       - target:  usage
@@ -41,6 +52,9 @@
       -->
 	<target name="depends">
 		<mkdir dir="${output.dir}" />
+		<mkdir dir="${output.html.dir}" />
+		<mkdir dir="${output.pdf.dir}" />
+		<mkdir dir="${output.fo.dir}" />
 	</target>
 
 	<!--
@@ -49,18 +63,49 @@
       -     .xml files into .html files using the DocBook XSL.
       -->
 	<target name="build-html" depends="depends" description="Generates HTML files from DocBook XML">
-		<xslt style="${html.stylesheet}" extension=".html" basedir="${input.dir}" destdir="${output.dir}">
+		<xslt style="${html.stylesheet}" extension=".html" basedir="${input.dir}" destdir="${output.html.dir}">
 			<include name="**/*book.xml" />
-			<include name="**/*article.xml" />
-			<param name="html.stylesheet" expression="style.css" />
 			<classpath refid="saxon.class.path" />
+			<param name="html.stylesheet" expression="assets/css/docbook.css" />
+			<param name="section.autolabel" expression="1" />
+			<param name="html.cleanup" expression="1" />
+			<outputproperty name="indent" value="yes" />
 		</xslt>
-		<!-- Copy the stylesheet to the same directory as the HTML files -->
-		<copy todir="${output.dir}">
-			<fileset dir="lib">
-				<include name="style.css" />
-			</fileset>
+		<!-- Copy the assets files to the right directory -->
+		<copy toDir="${output.html.dir}/assets" >
+			<fileset dir="${input.dir}/assets" />
 		</copy>
+	</target>
+
+	<!--
+	 - target:  build-pdf-xalan
+	 - description:  Iterates through a directory and transforms
+	 -     .xml files into .fo files using the DocBook XSL.
+	 -->
+	<target name="build-pdf-xalan" depends="depends" description="Generates PDF files from DocBook XML">
+		<xslt style="${fo.stylesheet}" extension=".fo" 
+	        basedir="${input.dir}" destdir="${output.fo.dir}">
+			<include name="**/*book.xml" />
+			<param name="section.autolabel" expression="1" />
+			<classpath refid="xalan.classpath" />
+		</xslt>
+
+		<taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop">
+			<classpath>
+				<fileset dir="${fop.lib.dir}/lib" >
+					<include name="*.jar" />
+				</fileset>
+				<fileset dir="${fop.lib.dir}/build">
+					<include name="fop.jar" />
+				</fileset>
+			</classpath>
+		</taskdef>
+
+		<fop format="application/pdf" outdir="${output.pdf.dir}">
+			<fileset dir="${output.fo.dir}">
+				<include name="**/*.fo" />
+			</fileset>
+		</fop>
 	</target>
 
 </project>

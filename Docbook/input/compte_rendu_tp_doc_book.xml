@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-4.5-dtd/docbookx.dtd">
+
+<article>
+	<articleinfo>
+		<authorgroup>
+			<author>
+				<surname>CHEGHAM</surname>
+				<firstname>Wassim</firstname>
+			</author>
+			<author>
+				<surname>LE BOUTER</surname>
+				<firstname>Gurval</firstname>
+			</author>
+			<corpcredit>Master2 MITIC - ISTIC</corpcredit>
+		</authorgroup>
+		<date>2011-2012</date>
+		<title>TP DOCBOOK – XSLT et transformation SVG</title>
+	</articleinfo>
+
+	<sect1>
+		<title>Titre de la section ici</title>
+		<para>
+			Voici un paragraphe
+		</para>
+		<para>
+		<link linkend="image-id">figure 1</link>
+		</para>
+		<informalexample>
+			<programlisting role="xml">
+&lt;xsl:template name="template"&gt;
+&lt;/xsl:template&gt; </programlisting>
+		</informalexample>
+	</sect1>
+
+	<appendix>
+		<title>Images</title>
+		<figure id="image-id">
+			<title>
+				<link linkend="image-id">Texte ici</link>
+			</title>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="image.jpg" format="JPG"
+						role="pdf" />
+				</imageobject>
+				<imageobject>
+					<imagedata fileref="image.jpg" format="JPG"
+						role="html"/>
+				</imageobject>
+			</mediaobject>
+		</figure>
+
+	</appendix>
+
+	<bibliography>
+		<title>Bibliographie</title>
+		<bibliodiv>
+			<biblioentry>
+				<authorgroup>
+					<corpauthor>
+						<ulink url="http://www.w3schools.com/svg/default.asp">w3school.com</ulink>
+					</corpauthor>
+				</authorgroup>
+				<title>SVG tutorial</title>
+			</biblioentry>
+		</bibliodiv>
+		<bibliodiv>
+			<biblioentry>
+				<authorgroup>
+					<corpauthor>
+						<ulink url="http://www.w3.org/TR/SVG/struct.html">w3.org</ulink>
+					</corpauthor>
+				</authorgroup>
+				<title>Document structure</title>
+			</biblioentry>
+		</bibliodiv>
+	</bibliography>
+</article>
