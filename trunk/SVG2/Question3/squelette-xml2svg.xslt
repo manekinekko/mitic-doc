@@ -4,6 +4,7 @@
 	<xsl:output method="xml" version="1.0" encoding="ISO-8859-15"
 		indent="yes" doctype-public="-//W3C//DTD SVG 1.1//EN"
 		doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" />
+	<xsl:strip-space elements="*" />
 
 	<xsl:param name="text.style" select="'fill:#000000;stroke:none;'" />
 	<xsl:param name="handle.path.style"
@@ -56,38 +57,57 @@
 
 	</xsl:template>
 
-	<!-- dessiner le noeud courant -->
+	<!-- -->
 	<xsl:template name="dessinerNoeud">
 		<xsl:param name="profondeur" select="0" />
 		<xsl:param name="noeud_courant" />
 		<xsl:param name="nb_element" />
 
-		 <xsl:variable name="y"
-			select="$y0 + count( preceding::* | ancestor::* ) * ($rowHeight+5)"></xsl:variable>
+		<xsl:variable name="display">
+			<xsl:choose>
+				<xsl:when test="name() != ''"><xsl:value-of select="name()" /></xsl:when>
+				<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:variable name="width">
+			<xsl:call-template name="string-width">
+				<xsl:with-param name="s" select="$display"></xsl:with-param>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:variable name="y"
+			select="$y0 + (count( preceding::* | ancestor::* | preceding::text() | ancestor::text()) * ($rowHeight))"></xsl:variable>
 		<xsl:variable name="x" select="$profondeur*10"></xsl:variable>
 
 		<xsl:if test=" $profondeur &gt; 0 ">
 
-			<xsl:call-template name="dessiner">
-				<xsl:with-param name="x" select="$x"></xsl:with-param>
-				<xsl:with-param name="y" select="$y"></xsl:with-param>
-				<xsl:with-param name="name" select="name()"></xsl:with-param>
-				<xsl:with-param name="profondeur" select="$profondeur"></xsl:with-param>
-			</xsl:call-template>
+			<!-- les lignes -->
+			<xsl:if test=" $profondeur &gt; 1 ">
+				<line x1="{$x - 5}" y1="{$y + ($boxHeight div 2)}" x2="{$x}"
+					y2="{$y + ($boxHeight div 2)}" style="stroke:black;stroke-width:1" />
+			</xsl:if>
 
-			<!-- on affiche les feuilles -->
-			<xsl:if test="not(*)">
-				<xsl:call-template name="dessiner">
-					<xsl:with-param name="x" select="$x + 20"></xsl:with-param>
-					<xsl:with-param name="y" select="$y + $rowHeight"></xsl:with-param>
-					<xsl:with-param name="name" select="text()"></xsl:with-param>
-					<xsl:with-param name="profondeur" select="$profondeur"></xsl:with-param>
-				</xsl:call-template>
+			<!-- les rectangles -->
+			<rect x="{$x}" y="{$y}" width="{$width}" height="{$boxHeight}"
+				fill-opacity="0.0" stroke="black" />
+
+			<!-- les textes -->
+			<text font-family="ArialMT" font-size="12" x="{$x+2}" y="{$y+12}">
+				<xsl:value-of select="$display"></xsl:value-of>
+			</text>
+
+			<xsl:variable name="ln"
+				select=" count(child::*[ position() != last() ]/descendant-or-self::*) " />
+
+			<xsl:if test=" $ln &gt; 0 ">
+				<line x1="{$x + 5}" y1="{$y + $boxHeight}" x2="{$x + 5}"
+					y2="{$y + ($rowHeight * ($ln+1.5)) -1}" style="stroke:black;stroke-width:1" />
 			</xsl:if>
 
 		</xsl:if>
 
-		<xsl:for-each select="$noeud_courant/*">
+		<xsl:for-each select="$noeud_courant/* | $noeud_courant/text()">
 
 			<xsl:call-template name="dessinerNoeud">
 				<xsl:with-param name="profondeur" select="$profondeur+1"></xsl:with-param>
@@ -97,48 +117,6 @@
 
 		</xsl:for-each>
 
-	</xsl:template>
-
-
-	<xsl:template name="dessiner">
-
-		<xsl:param name="x" />
-		<xsl:param name="y" />
-		<xsl:param name="name" />
-		<xsl:param name="profondeur" />
-
-		<xsl:if test=" string-length($name) &gt; 0 ">
-
-			<xsl:variable name="width">
-				<xsl:call-template name="string-width">
-					<xsl:with-param name="s" select="$name"></xsl:with-param>
-				</xsl:call-template>
-			</xsl:variable>
-
-			<!-- les lignes -->
-			<xsl:if test=" $profondeur &gt; 1 ">
-				<line x1="{$x - 5}" y1="{$y + ($rowHeight div 2)}" x2="{$x}"
-					y2="{$y + ($rowHeight div 2)}" style="stroke:rgb(0,0,0);stroke-width:1" />
-			</xsl:if>
-
-			<!-- les rectangles -->
-			<rect x="{$x}" y="{$y}" width="{$width}" height="{$rowHeight}"
-				fill="white" stroke="black" />
-
-			<!-- les textes -->
-			<text font-family="ArialMT" font-size="12" x="{$x+2}" y="{$y+12}">
-				<xsl:value-of select="$name"></xsl:value-of>
-			</text>
-
-			<xsl:variable name="ln"
-				select=" count(child::*[ position() != last() ]/descendant-or-self::*) " />
-
-			<xsl:if test=" $ln &gt; 0 ">
-				<line x1="{$x + 5}" y1="{$y + $rowHeight}" x2="{$x + 5}"
-					y2="{$y + (($rowHeight+5) * ($ln+1.4) )}" style="stroke:rgb(0,0,0);stroke-width:1" />
-			</xsl:if>
-
-		</xsl:if>
 	</xsl:template>
 
 </xsl:stylesheet>
