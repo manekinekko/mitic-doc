@@ -33,6 +33,136 @@
 		</informalexample>
 	</sect1>
 
+	<sect1>
+		<title>TP Docbook</title>
+		<sect2>
+			<title>Logiciels utilisés</title>
+			<para>
+				Pour l’édition des fichiers XML (fichiers ant et docbook) nous avons utilisé Eclipse.
+				Pour les transformation XSLT, nous avons utilisé l’habituel Saxon.
+				Enfin, Pour générer les fichiers XML-FO, nous avons utilisé la librarie Fop, dans sa version 1.0.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Fichiers Docbook</title>
+			<sect3>
+				<title>Version</title>
+				<para>
+					La version de docbook utilisée est la 4.5, comme le prouve sa dtd:
+<programlisting><![CDATA[<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"../docbook-4.5-dtd/docbookx.dtd">]]></programlisting>
+				</para>
+			</sect3>
+			<sect3>
+				<title>Répertoires</title>
+				<para>
+					Les fichiers docbook se trouvent dans le répertoire input. 
+					Les fichiers générés se trouvent dans output, 
+					puis un autre répertoire en fonction du type de document (“output/pdf” pour un fichier pdf).
+				</para>
+			</sect3>
+			<sect3>
+				<title>Type de document</title>
+				<para>
+					Docbook permet d’écrire deux types de document: “book” et “article”, selon la balise utilisée. 
+					Les compte rendus seront des articles, ceux ci étant plus adaptés et plus concis pour la rédaction de documents technique. 
+					La principale différence avec “book” étant que celui-ci peut contenir une balise “chapter” et également une balise “article”. 
+					Un article, lui ne peut pas contenir de “book”.
+				</para>
+			</sect3>
+			<sect3>
+				<title>Balises utilisées</title>
+				<para>
+					<code><![CDATA[<sect1>]]></code> : permet de structurer un document, on peut y retrouver dedans:
+					<itemizedlist>
+						<listitem><code><![CDATA[<title>]]></code>: le titre de la section</listitem>
+						<listitem><code><![CDATA[<para>]]></code>: pour créer un paragraphe</listitem>
+						<listitem><code><![CDATA[<link>]]></code>: pour créer un lien (au sens de html)</listitem>
+					</itemizedlist>
+				</para>
+				<para>
+					Pour créer un lien vers une ancre dans un document, on procède comme ceci:
+					<programlisting><![CDATA[<link linkend="image-id">figure 1</link>]]></programlisting>
+				</para>
+				<para>
+					Il ne nous reste plus qu’à insérer l’image vers laquelle pointe le lien:
+<programlisting><![CDATA[<figure id="image-id">
+   <title><link linkend="image-id">Texte ici</link></title>
+   <mediaobject>
+	   <imageobject>
+		   <imagedata fileref="image.jpg" format="JPG" role="pdf" />
+	   </imageobject>
+	   <imageobject>
+		   <imagedata fileref="image.jpg" format="JPG" role="html"/>
+	   </imageobject>
+   </mediaobject>
+</figure>]]></programlisting>
+					Notons que l’on peut différencier l’image en fonction du document généré via l’attribut “role” de “imagedata”.
+				</para>
+			</sect3>
+		</sect2>
+		<sect2>
+			<title>Script Ant</title>
+			<sect3>
+				<title>Impression</title>
+				<para>
+					C’est la création du script ant qui a été la partie la plus compliquée et et qui à prise le plus de temps dans ce TP. Le fichier ant “build.xml” se situe à la racine du répertoire Docbook.
+				</para>
+			</sect3>
+			<sect3>
+				<title>Utilisation</title>
+				<para>
+					Le script ant possède plusieurs cibles, dont deux qui nous intéressent:
+					<itemizedlist>
+						<listitem>build-html: génère les fichiers .html à partir des fichiers docbook</listitem>
+						<listitem>build-pdf-xalan: génère les fichiers .fo pour ensuite les transformer en .pdf</listitem>
+					</itemizedlist>
+				</para>
+			</sect3>
+			<sect3>
+				<title>Syntaxe</title>
+				<simplesect>
+					<title>Définir une variable:</title>
+					<programlisting><![CDATA[<property name="ma_variable" value="ma_valeur" />]]></programlisting>
+					Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l’appelle comme ceci: <code>${ma_variable}</code>
+				</simplesect>
+				<simplesect>
+					<title>Définir une cible:</title>
+<programlisting><![CDATA[<target name="ma_cible" depends="dependance" 
+	description="La description de la cible">]]></programlisting>
+					Avec name, le nom de la cible. C’est cette valeur là qu’il faudra utiliser pour exécuter le script ant avec cette cible:
+					<programlisting>&gt; ant ma_cible</programlisting>
+					Depends permet d'exécuter d’autres cibles avant celle ci.
+				</simplesect>
+				<simplesect>
+					<title>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples:</title>
+					<simplelist>
+						<member>créer le répertoire définit par la variable “mon_repertoire”:</member>
+						<member><programlisting><![CDATA[<mkdir dir="${mon_repertoire}" />]]></programlisting></member>
+						<member>supprime “mon_repertoire”:</member>
+						<member><programlisting><![CDATA[<delete dir="${mon_repertoire}" />]]></programlisting></member>
+						<member>copie le répertoire “a_copier” vers “destination”:</member>
+						<member>
+<programlisting><![CDATA[<copy toDir="${destination}/assets" >
+	<fileset dir="${a_copier}/assets" />
+</copy>]]></programlisting>
+						</member>
+					</simplelist>
+				</simplesect>
+			</sect3>
+			<sect3>
+				<title>Pourquoi utiliser XML-FO pour générer des PDF?</title>
+				<para>
+					Il n’est pas possible de générer des fichiers PDF directement à partir des fichiers docbook. 
+					Il faut soit générer des fichiers LaTeX, soit des fichiers XML-FO, pour ensuite les convertir en PDF.
+					L’avantage de XML-FO sur LaTex, est qu’il s’agit d’un fichier XML. La génération se fait grâce à un XSLT. 
+					Pour générer le fichier PDF à partir du XML-FO, on utilise la librairie Fop, qui est développée en Java. 
+					Bref, utiliser XML-FO permet d’utiliser des technologies que l’on connait bien et surtout en rapport avec la matière DOC.
+				</para>
+			</sect3>
+		</sect2>
+	</sect1>
+
 	<appendix>
 		<title>Images</title>
 		<figure id="image-id">
