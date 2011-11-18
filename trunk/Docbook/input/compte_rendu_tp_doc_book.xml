@@ -19,18 +19,118 @@
 	</articleinfo>
 
 	<sect1>
-		<title>Titre de la section ici</title>
-		<para>
-			Voici un paragraphe
-		</para>
-		<para>
-		<link linkend="image-id">figure 1</link>
-		</para>
-		<informalexample>
-			<programlisting role="xml">
-&lt;xsl:template name="template"&gt;
-&lt;/xsl:template&gt; </programlisting>
-		</informalexample>
+		<title>Compte Rendus des TP SVG et SVG2</title>
+		<sect2>
+			<title>Objectifs</title>
+			<para>
+				Le but de ces deux TPs est de nous familiariser au modèle SVG (Scalable Vector Graphics), 
+				l’écriture de feuilles de transformation générique grâce notamment à l'utilisation des fonctions avec paramètres en XSLT.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Environnement de développement XML</title>
+			<para>
+				Pour réaliser ces TPs nous avions utilisé l’IDE Eclipse et son mode WTP (Web Tools Platform), 
+				ainsi que les navigateur Firefox/Chrome pour la visualisation des documents produits. 
+				Nous avions également eu recours aux consoles de débogages de Google chrome et au plugin Firebug de Firefox, 
+				pour mieux inspecter les modèles SVG générés.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Utilisation d’un document externe pour la transformation</title>
+			<para>
+				Dans cette partie, nous avions écris une feuille de style utilisant deux fichiers XML en entrée: un premier fichier XML comme source de données, et un second comme source de style.
+				Dans un premier temps, nous devions lire le fichier de style dans une variable <code>$style</code>, comme ceci:
+
+<programlisting><![CDATA[...
+<xsl:variable name="style" select="document('../style.xml')" />
+...]]></programlisting>
+			</para>
+			<para>
+				Ensuite, nous avions écris une règle XSL pour parcourir tous les mois du fichier de données, 
+				et ainsi généré un tag <code><![CDATA[<rect />]]></code> permettant d’avoir une forme SVG rectangulaire représentant les barres de l’histogramme :
+
+<programlisting><![CDATA[...
+<xsl:for-each-group select="annee/mois" group-by="@numero">
+	<xsl:variable name="y" select="100 - number(./text())"/>
+	<rect x="{@numero * 10}" y="{ $y }" width="10" height="{./text()}"
+		fill="{$style/style/color[ number(current-group()/@numero) ][position()]}" 
+		stroke="black" />
+</xsl:for-each-group>
+...]]></programlisting>
+				</para>
+				<para>
+					Et afin de donner une couleur à chaque barre, il nous a suffit d’écrire une requête XPATH afin de 
+					récupérer le code de la couleur renseigné dans les tags <code><![CDATA[<color />]]></code> du fchier style.xml.
+				</para>
+				<para>
+					Et voici donc le résultat produit:
+				</para>
+				<para>
+					<link linkend="histo4">Histogramme 4</link>
+				</para>
+		</sect2>
+		<sect2>
+			<title>Histogramme SVG commenté</title>
+			<para>
+				Pour produire un histogramme SVG commenté, il a suffit d’ajouter un tag <code><![CDATA[<text />]]></code> 
+				au dessus de chaque barre indiquant le pourcentage de chacune d’elle. Et voici le code correspondant :
+
+<programlisting><![CDATA[...
+<xsl:for-each-group select="annee/mois" group-by="@numero">
+	<xsl:variable name="y" select="100 - number(./text())"/>
+	<rect x="{@numero * 10}" y="{ $y }" width="10" height="{./text()}"
+		fill="{$style/style/color[ number(current-group()/@numero) ][position()]}" 
+		stroke="black" />
+
+<text x="{ (@numero * 10)}" y="{$y - 5}" font-size="5">
+		<xsl:value-of select="./text()"/>%
+
+</text>
+</xsl:for-each-group>
+...]]></programlisting>
+			</para>
+			<para>
+				Ce qui nous donne cet histogramme :
+			</para>
+			<para>
+				<link linkend="histo5">Histogramme 5</link>
+			</para>
+		</sect2>
+		<sect2>
+			<title>Référence à un document SVG</title>
+			<para>
+				Afin de produire un document XHTML intégrant une référence au fichier annee.svg, une simple balise <code><![CDATA[<img />]]></code> suffit :
+
+<programlisting><![CDATA[...
+<img src="../Question5/annee.svg" alt="histogramme par mois" 
+	height="80%" width="80%" />
+...]]></programlisting>
+			</para>
+		</sect2>
+		<sect2>
+			<title>Document XHTML composite</title>
+			<para>
+				Nous avions également écrit une feuille de transformation afin de produire un fichier XHTML contenant à la fois 
+				les résultats en chiffre sous forme de liste et l’histogramme en SVG. L’écriture de cette feuille XSL n’était 
+				pas si compliquée en soit puisque cela consistait simplement à refaire ce que nous avions réalisé lors des questions précédentes.
+				De plus, la majorité des navigateurs Internet interprètent nativement les graphiques SVG ce qui permet donc d’intégrer 
+				ces derniers au sein du document XHTML. Cela permet, par exemple, au navigateur d’éviter de refaire une seconde requête HTTP pour charger ces graphiques, 
+				dans le cas où ces derniers étaient référencés dans la balise <code><![CDATA[<img />]]></code>.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Production de résultats statistiques</title>
+			<para>
+				Lors de cette partie, nous devions écrire une feuille de style permettant de produire un document XHTML présentant le nombre de films par décade.
+				Nous avions définis deux groupes SVG: l’un contenant les barres de l’histogramme et l’autre contenant l’axe des Y. 
+				Ce qui nous a posé des difficultés pour réaliser cette tâche, n'était pas l’écriture des règles de transformations mais plutôt de trouver les 
+				bonnes formules mathématiques qui nous permettaient d’arriver au résultat attendue.
+			</para>
+			<para>
+				<link linkend="histo8">Histogramme 8</link>
+			</para>
+		</sect2>
 	</sect1>
 
 	<sect1>
@@ -38,9 +138,9 @@
 		<sect2>
 			<title>Logiciels utilisés</title>
 			<para>
-				Pour l’édition des fichiers XML (fichiers ant et docbook) nous avons utilisé Eclipse.
-				Pour les transformation XSLT, nous avons utilisé l’habituel Saxon.
-				Enfin, Pour générer les fichiers XML-FO, nous avons utilisé la librarie Fop, dans sa version 1.0.
+				Pour l’édition des fichiers XML (fichiers ANT et Docbook) nous avons utilisé Eclipse.
+				Pour les transformation XSLT, nous avons utilisé Saxon.
+				Enfin, pour générer les fichiers XML-FO, nous avons utilisé la librairie Fop (Formatting Objects Processor) dans sa version 1.0.
 			</para>
 		</sect2>
 		<sect2>
@@ -48,7 +148,7 @@
 			<sect3>
 				<title>Version</title>
 				<para>
-					La version de docbook utilisée est la 4.5, comme le prouve sa dtd:
+					La version de Docbook utilisée est la 4.5, ce que l’on peut constater grâce à sa DTD:
 <programlisting><![CDATA[<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
 	"../docbook-4.5-dtd/docbookx.dtd">]]></programlisting>
 				</para>
@@ -56,9 +156,9 @@
 			<sect3>
 				<title>Répertoires</title>
 				<para>
-					Les fichiers docbook se trouvent dans le répertoire input. 
-					Les fichiers générés se trouvent dans output, 
-					puis un autre répertoire en fonction du type de document (“output/pdf” pour un fichier pdf).
+					Les fichiers Docbook se trouvent dans le répertoire input. 
+					Les fichiers générés se trouvent dans le répertoire output, dans lequel on retrouvent deux sous-répertoires: 
+					un pour les sorties HTML et un deuxième pour les sorties PDF.
 				</para>
 			</sect3>
 			<sect3>
@@ -66,18 +166,18 @@
 				<para>
 					Docbook permet d’écrire deux types de document: “book” et “article”, selon la balise utilisée. 
 					Les compte rendus seront des articles, ceux ci étant plus adaptés et plus concis pour la rédaction de documents technique. 
-					La principale différence avec “book” étant que celui-ci peut contenir une balise “chapter” et également une balise “article”. 
+					La principale différence avec le type “book” est que celui-ci peut contenir une balise “chapter” et également une balise “article”. 
 					Un article, lui ne peut pas contenir de “book”.
 				</para>
 			</sect3>
 			<sect3>
 				<title>Balises utilisées</title>
 				<para>
-					<code><![CDATA[<sect1>]]></code> : permet de structurer un document, on peut y retrouver dedans:
+					<code><![CDATA[<sect1>]]></code> : permet de structurer un document, on peut y retrouver:
 					<itemizedlist>
 						<listitem><code><![CDATA[<title>]]></code>: le titre de la section</listitem>
 						<listitem><code><![CDATA[<para>]]></code>: pour créer un paragraphe</listitem>
-						<listitem><code><![CDATA[<link>]]></code>: pour créer un lien (au sens de html)</listitem>
+						<listitem><code><![CDATA[<link>]]></code>: pour créer un lien</listitem>
 					</itemizedlist>
 				</para>
 				<para>
@@ -102,20 +202,21 @@
 			</sect3>
 		</sect2>
 		<sect2>
-			<title>Script Ant</title>
+			<title>Script ANT</title>
 			<sect3>
 				<title>Impression</title>
 				<para>
-					C’est la création du script ant qui a été la partie la plus compliquée et et qui à prise le plus de temps dans ce TP. Le fichier ant “build.xml” se situe à la racine du répertoire Docbook.
+					C’est la création du script ANT qui a été la partie la plus compliquée et qui a pris le plus de temps dans ce TP. 
+					Le script ANT “build.xml” se situe à la racine du répertoire Docbook.
 				</para>
 			</sect3>
 			<sect3>
 				<title>Utilisation</title>
 				<para>
-					Le script ant possède plusieurs cibles, dont deux qui nous intéressent:
+					Le script ANT possède plusieurs cibles, dont deux qui nous intéressent:
 					<itemizedlist>
-						<listitem>build-html: génère les fichiers .html à partir des fichiers docbook</listitem>
-						<listitem>build-pdf-xalan: génère les fichiers .fo pour ensuite les transformer en .pdf</listitem>
+						<listitem>build-html: génère les fichiers *.html à partir des fichiers Docbook</listitem>
+						<listitem>build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</listitem>
 					</itemizedlist>
 				</para>
 			</sect3>
@@ -132,10 +233,10 @@
 	description="La description de la cible">]]></programlisting>
 					Avec name, le nom de la cible. C’est cette valeur là qu’il faudra utiliser pour exécuter le script ant avec cette cible:
 					<programlisting>&gt; ant ma_cible</programlisting>
-					Depends permet d'exécuter d’autres cibles avant celle ci.
+					L’attribut depends permet d'exécuter d’autres cibles avant celle-ci.
 				</simplesect>
 				<simplesect>
-					<title>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples:</title>
+					<title>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:</title>
 					<simplelist>
 						<member>créer le répertoire définit par la variable “mon_repertoire”:</member>
 						<member><programlisting><![CDATA[<mkdir dir="${mon_repertoire}" />]]></programlisting></member>
@@ -153,11 +254,11 @@
 			<sect3>
 				<title>Pourquoi utiliser XML-FO pour générer des PDF?</title>
 				<para>
-					Il n’est pas possible de générer des fichiers PDF directement à partir des fichiers docbook. 
+					Il n’est pas possible de générer des fichiers PDF directement à partir des fichiers Docbook. 
 					Il faut soit générer des fichiers LaTeX, soit des fichiers XML-FO, pour ensuite les convertir en PDF.
-					L’avantage de XML-FO sur LaTex, est qu’il s’agit d’un fichier XML. La génération se fait grâce à un XSLT. 
+					L’avantage d’utiliser XML-FO au lieu de LaTex, est qu’il s’agit d’un fichier XML. La génération se fait grâce à une transformation XSL. 
 					Pour générer le fichier PDF à partir du XML-FO, on utilise la librairie Fop, qui est développée en Java. 
-					Bref, utiliser XML-FO permet d’utiliser des technologies que l’on connait bien et surtout en rapport avec la matière DOC.
+					Pour résumer, utiliser XML-FO permet d’utiliser des technologies que l’on connait bien et surtout en rapport avec la matière DOC.
 				</para>
 			</sect3>
 		</sect2>
@@ -165,22 +266,45 @@
 
 	<appendix>
 		<title>Images</title>
-		<figure id="image-id">
+		<figure id="histo4">
 			<title>
-				<link linkend="image-id">Texte ici</link>
+				<link linkend="histo4">Histogramme Question 4</link>
 			</title>
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="image.jpg" format="JPG"
-						role="pdf" />
+					<imagedata fileref="input/images/histo4.jpg" format="JPG" role="pdf" />
 				</imageobject>
 				<imageobject>
-					<imagedata fileref="image.jpg" format="JPG"
-						role="html"/>
+					<imagedata fileref="input/images/histo4.jpg" format="JPG" role="html"/>
 				</imageobject>
 			</mediaobject>
 		</figure>
-
+		<figure id="histo5">
+			<title>
+				<link linkend="histo5">Histogramme Question 5</link>
+			</title>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="input/images/histo5.jpg" format="JPG" role="pdf" />
+				</imageobject>
+				<imageobject>
+					<imagedata fileref="input/images/histo5.jpg" format="JPG" role="html"/>
+				</imageobject>
+			</mediaobject>
+		</figure>
+		<figure id="histo8">
+			<title>
+				<link linkend="histo8">Histogramme Question 8</link>
+			</title>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="input/images/histo8.jpg" format="JPG" role="pdf" />
+				</imageobject>
+				<imageobject>
+					<imagedata fileref="input/images/histo8.jpg" format="JPG" role="html"/>
+				</imageobject>
+			</mediaobject>
+		</figure>
 	</appendix>
 
 	<bibliography>
@@ -189,20 +313,40 @@
 			<biblioentry>
 				<authorgroup>
 					<corpauthor>
-						<ulink url="http://www.w3schools.com/svg/default.asp">w3school.com</ulink>
+						<ulink url="http://www.w3schools.com/svg/default.asp">www.w3school.com</ulink>
 					</corpauthor>
 				</authorgroup>
 				<title>SVG tutorial</title>
+			</biblioentry>
+		</bibliodiv> 
+		<bibliodiv>
+			<biblioentry>
+				<authorgroup>
+					<corpauthor>
+						<ulink url="http://www.w3.org/TR/SVG/struct.html">www.w3.org</ulink>
+					</corpauthor>
+				</authorgroup>
+				<title>Document structure</title>
 			</biblioentry>
 		</bibliodiv>
 		<bibliodiv>
 			<biblioentry>
 				<authorgroup>
 					<corpauthor>
-						<ulink url="http://www.w3.org/TR/SVG/struct.html">w3.org</ulink>
+						<ulink url="http://www.docbook.org/">www.docbook.org</ulink>
 					</corpauthor>
 				</authorgroup>
-				<title>Document structure</title>
+				<title>Site officiel de Docbook</title>
+			</biblioentry>
+		</bibliodiv>
+		<bibliodiv>
+			<biblioentry>
+				<authorgroup>
+					<corpauthor>
+						<ulink url="http://www.docbook.org/tdg/en/html/docbook.html">www.docbook.org</ulink>
+					</corpauthor>
+				</authorgroup>
+				<title>Documentation de Docbook</title>
 			</biblioentry>
 		</bibliodiv>
 	</bibliography>
