@@ -46,11 +46,11 @@
                   <dl>
                      <dt><span class="sect2"><a href="#d53e114">2.1. Logiciels utilisés</a></span></dt>
                      <dt><span class="sect2"><a href="#d53e119">2.2. Fichiers Docbook</a></span></dt>
-                     <dt><span class="sect2"><a href="#d53e172">2.3. Script ANT</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e175">2.3. Script ANT</a></span></dt>
                   </dl>
                </dd>
-               <dt><span class="appendix"><a href="#d53e237">A. Images</a></span></dt>
-               <dt><span class="bibliography"><a href="#d53e273">Bibliographie</a></span></dt>
+               <dt><span class="appendix"><a href="#d53e249">A. Images</a></span></dt>
+               <dt><span class="bibliography"><a href="#d53e285">Bibliographie</a></span></dt>
             </dl>
          </div>
          <div class="sect1" title="1.&nbsp;Compte Rendus du TP SVG">
@@ -352,11 +352,17 @@
                      					
                      <div class="itemizedlist">
                         <ul class="itemizedlist" type="disc">
-                           <li class="listitem"><code class="code">&lt;title&gt;</code>: le titre de la section
+                           <li class="listitem">
+                              <p><code class="code">&lt;title&gt;</code>: le titre de la section
+                              </p>
                            </li>
-                           <li class="listitem"><code class="code">&lt;para&gt;</code>: pour créer un paragraphe
+                           <li class="listitem">
+                              <p><code class="code">&lt;para&gt;</code>: pour créer un paragraphe
+                              </p>
                            </li>
-                           <li class="listitem"><code class="code">&lt;link&gt;</code>: pour créer un lien
+                           <li class="listitem">
+                              <p><code class="code">&lt;link&gt;</code>: pour créer un lien
+                              </p>
                            </li>
                         </ul>
                      </div>
@@ -387,7 +393,7 @@
                <div class="titlepage">
                   <div>
                      <div>
-                        <h3 class="title"><a name="d53e172"></a>2.3.&nbsp;Script ANT
+                        <h3 class="title"><a name="d53e175"></a>2.3.&nbsp;Script ANT
                         </h3>
                      </div>
                   </div>
@@ -397,7 +403,7 @@
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title"><a name="d53e175"></a>2.3.1.&nbsp;Impression
+                           <h4 class="title"><a name="d53e178"></a>2.3.1.&nbsp;Impression
                            </h4>
                         </div>
                      </div>
@@ -413,7 +419,7 @@
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title"><a name="d53e180"></a>2.3.2.&nbsp;Utilisation
+                           <h4 class="title"><a name="d53e183"></a>2.3.2.&nbsp;Utilisation
                            </h4>
                         </div>
                      </div>
@@ -424,8 +430,12 @@
                      					
                      <div class="itemizedlist">
                         <ul class="itemizedlist" type="disc">
-                           <li class="listitem">build-html: génère les fichiers *.html à partir des fichiers Docbook</li>
-                           <li class="listitem">build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</li>
+                           <li class="listitem">
+                              <p>build-html: génère les fichiers *.html à partir des fichiers Docbook</p>
+                           </li>
+                           <li class="listitem">
+                              <p>build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</p>
+                           </li>
                         </ul>
                      </div>
                      				
@@ -435,7 +445,7 @@
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title"><a name="d53e191"></a>2.3.3.&nbsp;Syntaxe
+                           <h4 class="title"><a name="d53e196"></a>2.3.3.&nbsp;Syntaxe
                            </h4>
                         </div>
                      </div>
@@ -445,68 +455,74 @@
                      <div class="titlepage">
                         <div>
                            <div>
-                              <h5 class="title"><a name="d53e194"></a>Définir une variable:
-                              </h5>
-                           </div>
-                        </div>
-                        <div></div>
-                     </div><pre class="programlisting">&lt;property name="ma_variable" value="ma_valeur" /&gt;</pre>
-                     					Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l&#8217;appelle comme
-                     ceci: <code class="code">${ma_variable}</code></div>
-                  <div class="simplesect" title="Définir une cible:">
-                     <div class="titlepage">
-                        <div>
-                           <div>
-                              <h5 class="title"><a name="d53e202"></a>Définir une cible:
-                              </h5>
-                           </div>
-                        </div>
-                        <div></div>
-                     </div><pre class="programlisting">&lt;target name="ma_cible" depends="dependance" 
-	description="La description de la cible"&gt;</pre>
-                     					Avec name, le nom de la cible. C&#8217;est cette valeur là qu&#8217;il faudra utiliser pour exécuter le script ant avec cette cible:<pre class="programlisting">&gt; ant ma_cible</pre>
-                     					L&#8217;attribut depends permet d'exécuter d&#8217;autres cibles avant celle-ci.</div>
-                  <div class="simplesect" title="Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:">
-                     <div class="titlepage">
-                        <div>
-                           <div>
-                              <h5 class="title"><a name="d53e211"></a>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:
+                              <h5 class="title"><a name="d53e199"></a>Définir une variable:
                               </h5>
                            </div>
                         </div>
                         <div></div>
                      </div>
-                     <table border="0" summary="Simple list" class="simplelist">
-                        <tr>
-                           <td>créer le répertoire définit par la variable &#8220;mon_repertoire&#8221;:</td>
-                        </tr>
-                        <tr>
-                           <td><pre class="programlisting">&lt;mkdir dir="${mon_repertoire}" /&gt;</pre></td>
-                        </tr>
-                        <tr>
-                           <td>supprime &#8220;mon_repertoire&#8221;:</td>
-                        </tr>
-                        <tr>
-                           <td><pre class="programlisting">&lt;delete dir="${mon_repertoire}" /&gt;</pre></td>
-                        </tr>
-                        <tr>
-                           <td>copie le répertoire &#8220;a_copier&#8221; vers &#8220;destination&#8221;:</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <pre class="programlisting">&lt;copy toDir="${destination}/assets" &gt;
+                     <p>
+                        						<pre class="programlisting">&lt;property name="ma_variable" value="ma_valeur" /&gt;</pre>
+                        						Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l&#8217;appelle comme
+                        ceci: <code class="code">${ma_variable}</code>
+                        					
+                     </p>
+                  </div>
+                  <div class="simplesect" title="Définir une cible:">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h5 class="title"><a name="d53e210"></a>Définir une cible:
+                              </h5>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div>
+                     <p>
+                        						<pre class="programlisting">&lt;target name="ma_cible" depends="dependance" 
+	description="La description de la cible"&gt;</pre>
+                        						Avec name, le nom de la cible. C&#8217;est cette valeur là qu&#8217;il faudra utiliser pour exécuter le script ant avec cette cible:
+                        						<pre class="programlisting">&gt; ant ma_cible</pre>
+                        						L&#8217;attribut depends permet d'exécuter d&#8217;autres cibles avant celle-ci.
+                        					</p>
+                  </div>
+                  <div class="simplesect" title="Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h5 class="title"><a name="d53e221"></a>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:
+                              </h5>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist" type="disc">
+                           <li class="listitem">
+                              <p>créer le répertoire définit par la variable &#8220;mon_repertoire&#8221;:</p>
+                           </li>
+                           <li class="listitem">
+                              <p><pre class="programlisting">&lt;mkdir dir="${mon_repertoire}" /&gt;</pre></p>
+                           </li>
+                           <li class="listitem">
+                              <p>supprime &#8220;mon_repertoire&#8221;:</p>
+                           </li>
+                           <li class="listitem"><pre class="programlisting">&lt;delete dir="${mon_repertoire}" /&gt;</pre></li>
+                           <li class="listitem">
+                              <p>copie le répertoire &#8220;a_copier&#8221; vers &#8220;destination&#8221;:</p>
+                           </li>
+                           <li class="listitem"><pre class="programlisting">&lt;copy toDir="${destination}/assets" &gt;
 	&lt;fileset dir="${a_copier}/assets" /&gt;
-&lt;/copy&gt;</pre>
-                              						</td>
-                        </tr>
-                     </table>
+&lt;/copy&gt;</pre></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
                <div class="sect3" title="2.3.4.&nbsp;Pourquoi utiliser XML-FO pour générer des PDF?">
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title"><a name="d53e232"></a>2.3.4.&nbsp;Pourquoi utiliser XML-FO pour générer des PDF?
+                           <h4 class="title"><a name="d53e244"></a>2.3.4.&nbsp;Pourquoi utiliser XML-FO pour générer des PDF?
                            </h4>
                         </div>
                      </div>
@@ -526,7 +542,7 @@
             </div>
          </div>
          <div class="appendix" title="A.&nbsp;Images">
-            <h2 class="title" style="clear: both"><a name="d53e237"></a>A.&nbsp;Images
+            <h2 class="title" style="clear: both"><a name="d53e249"></a>A.&nbsp;Images
             </h2>
             <div class="figure"><a name="histo4"></a><p class="title"><b>Figure&nbsp;A.1.&nbsp;
                      				<a class="link" href="#histo4" title="Figure&nbsp;A.1.&nbsp; Histogramme Question 4">Histogramme Question 4</a>
@@ -551,32 +567,32 @@
             <div class="titlepage">
                <div>
                   <div>
-                     <h2 class="title"><a name="d53e273"></a>Bibliographie
+                     <h2 class="title"><a name="d53e285"></a>Bibliographie
                      </h2>
                   </div>
                </div>
                <div></div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="SVG tutorial"><a name="d53e277"></a><p><span class="authorgroup"><span class="corpauthor">
+               <div class="biblioentry" title="SVG tutorial"><a name="d53e289"></a><p><span class="authorgroup"><span class="corpauthor">
                            						<a class="ulink" href="http://www.w3schools.com/svg/default.asp" target="_top">www.w3school.com</a>
                            					</span>. </span><span class="title"><i>SVG tutorial</i>. </span></p>
                </div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="Document structure"><a name="d53e287"></a><p><span class="authorgroup"><span class="corpauthor">
+               <div class="biblioentry" title="Document structure"><a name="d53e299"></a><p><span class="authorgroup"><span class="corpauthor">
                            						<a class="ulink" href="http://www.w3.org/TR/SVG/struct.html" target="_top">www.w3.org</a>
                            					</span>. </span><span class="title"><i>Document structure</i>. </span></p>
                </div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="Site officiel de Docbook"><a name="d53e297"></a><p><span class="authorgroup"><span class="corpauthor">
+               <div class="biblioentry" title="Site officiel de Docbook"><a name="d53e309"></a><p><span class="authorgroup"><span class="corpauthor">
                            						<a class="ulink" href="http://www.docbook.org/" target="_top">www.docbook.org</a>
                            					</span>. </span><span class="title"><i>Site officiel de Docbook</i>. </span></p>
                </div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="Documentation de Docbook"><a name="d53e307"></a><p><span class="authorgroup"><span class="corpauthor">
+               <div class="biblioentry" title="Documentation de Docbook"><a name="d53e319"></a><p><span class="authorgroup"><span class="corpauthor">
                            						<a class="ulink" href="http://www.docbook.org/tdg/en/html/docbook.html" target="_top">www.docbook.org</a>
                            					</span>. </span><span class="title"><i>Documentation de Docbook</i>. </span></p>
                </div>
