@@ -29,63 +29,556 @@
          <div class="toc">
             <p><b>Table of Contents</b></p>
             <dl>
-               <dt><span class="sect1"><a href="#d53e20">1. Titre de la section ici</a></span></dt>
-               <dt><span class="appendix"><a href="#d53e33">A. Images</a></span></dt>
-               <dt><span class="bibliography"><a href="#d53e47">Bibliographie</a></span></dt>
+               <dt><span class="sect1"><a href="#d53e20">1. Compte Rendus du TP SVG</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="sect2"><a href="#d53e23">1.1. Objectifs</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e28">1.2. Environnement de développement XML</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e33">1.3. Utilisation d&#8217;un document externe pour la transformation</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e64">1.4. Histogramme SVG commenté</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e82">1.5. Référence à un document SVG</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e93">1.6. Document XHTML composite</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e101">1.7. Production de résultats statistiques</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="sect1"><a href="#d53e111">2. TP Docbook</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="sect2"><a href="#d53e114">2.1. Logiciels utilisés</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e119">2.2. Fichiers Docbook</a></span></dt>
+                     <dt><span class="sect2"><a href="#d53e172">2.3. Script ANT</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="appendix"><a href="#d53e237">A. Images</a></span></dt>
+               <dt><span class="bibliography"><a href="#d53e273">Bibliographie</a></span></dt>
             </dl>
          </div>
-         <div class="sect1" title="1.&nbsp;Titre de la section ici">
+         <div class="sect1" title="1.&nbsp;Compte Rendus du TP SVG">
             <div class="titlepage">
                <div>
                   <div>
-                     <h2 class="title" style="clear: both"><a name="d53e20"></a>1.&nbsp;Titre de la section ici
+                     <h2 class="title" style="clear: both"><a name="d53e20"></a>1.&nbsp;Compte Rendus du TP SVG
                      </h2>
                   </div>
                </div>
                <div></div>
             </div>
-            <p>
-               			Voici un paragraphe
-               		
-            </p>
-            <p>
-               		<a class="link" href="#image-id" title="Figure&nbsp;A.1.&nbsp; Texte ici">figure 1</a>
-               		
-            </p>
-            <div class="informalexample"><pre class="programlisting">
-&lt;xsl:template name="template"&gt;
-&lt;/xsl:template&gt; </pre></div>
+            <div class="sect2" title="1.1.&nbsp;Objectifs">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e23"></a>1.1.&nbsp;Objectifs
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Le but du TP est de nous familiariser au modèle SVG (Scalable Vector Graphics), 
+                  				l&#8217;écriture de feuilles de transformation générique grâce notamment à l'utilisation des fonctions avec paramètres en XSLT.
+                  			
+               </p>
+            </div>
+            <div class="sect2" title="1.2.&nbsp;Environnement de développement XML">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e28"></a>1.2.&nbsp;Environnement de développement XML
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Pour réaliser ce TP nous avions utilisé l&#8217;IDE Eclipse et son mode WTP (Web Tools Platform), 
+                  				ainsi que les navigateur Firefox/Chrome pour la visualisation des documents produits. 
+                  				Nous avions également eu recours aux consoles de débogages de Google chrome et au plugin Firebug de Firefox, 
+                  				pour mieux inspecter les modèles SVG générés.
+                  			
+               </p>
+            </div>
+            <div class="sect2" title="1.3.&nbsp;Utilisation d&#8217;un document externe pour la transformation">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e33"></a>1.3.&nbsp;Utilisation d&#8217;un document externe pour la transformation
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Dans cette partie, nous avions écris une feuille de style utilisant deux fichiers XML en entrée: 
+                  				un premier fichier XML comme source de données, et un second comme source de style.
+                  				Dans un premier temps, nous devions lire le fichier de style dans une variable <code class="code">$style</code>, comme ceci:
+                  
+                  <pre class="programlisting">...
+&lt;xsl:variable name="style" select="document('../style.xml')" /&gt;
+...</pre>
+                  			</p>
+               <p>
+                  				Ensuite, nous avions écris une règle XSL pour parcourir tous les mois du fichier de données, 
+                  				et ainsi généré un tag <code class="code">&lt;rect /&gt;</code> permettant d&#8217;avoir une forme SVG rectangulaire représentant les barres de l&#8217;histogramme :
+                  
+                  <pre class="programlisting">...
+&lt;xsl:for-each-group select="annee/mois" group-by="@numero"&gt;
+	&lt;xsl:variable name="y" select="100 - number(./text())"/&gt;
+	&lt;rect x="{@numero * 10}" y="{ $y }" width="10" height="{./text()}"
+		fill="{$style/style/color[ number(current-group()/@numero) ][position()]}" 
+		stroke="black" /&gt;
+&lt;/xsl:for-each-group&gt;
+...</pre>
+                  				</p>
+               <p>
+                  					Et afin de donner une couleur à chaque barre, il nous a suffit d&#8217;écrire une requête XPATH afin de 
+                  					récupérer le code de la couleur renseigné dans les tags <code class="code">&lt;color /&gt;</code> du fchier style.xml.
+                  				
+               </p>
+               <p>
+                  					Et voici donc le résultat produit:
+                  				
+               </p>
+               <p>
+                  					<a class="link" href="#histo4" title="Figure&nbsp;A.1.&nbsp; Histogramme Question 4">Histogramme 4</a>
+                  				
+               </p>
+            </div>
+            <div class="sect2" title="1.4.&nbsp;Histogramme SVG commenté">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e64"></a>1.4.&nbsp;Histogramme SVG commenté
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Pour produire un histogramme SVG commenté, il a suffit d&#8217;ajouter un tag <code class="code">&lt;text /&gt;</code> 
+                  				au dessus de chaque barre indiquant le pourcentage de chacune d&#8217;elle. Et voici le code correspondant :
+                  
+                  <pre class="programlisting">...
+&lt;xsl:for-each-group select="annee/mois" group-by="@numero"&gt;
+	&lt;xsl:variable name="y" select="100 - number(./text())"/&gt;
+	&lt;rect x="{@numero * 10}" y="{ $y }" width="10" height="{./text()}"
+		fill="{$style/style/color[ number(current-group()/@numero) ][position()]}" 
+		stroke="black" /&gt;
+
+&lt;text x="{ (@numero * 10)}" y="{$y - 5}" font-size="5"&gt;
+		&lt;xsl:value-of select="./text()"/&gt;%
+
+&lt;/text&gt;
+&lt;/xsl:for-each-group&gt;
+...</pre>
+                  			</p>
+               <p>
+                  				Ce qui nous donne cet histogramme :
+                  			
+               </p>
+               <p>
+                  				<a class="link" href="#histo5" title="Figure&nbsp;A.2.&nbsp; Histogramme Question 5">Histogramme 5</a>
+                  			
+               </p>
+            </div>
+            <div class="sect2" title="1.5.&nbsp;Référence à un document SVG">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e82"></a>1.5.&nbsp;Référence à un document SVG
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Afin de produire un document XHTML intégrant une référence au fichier annee.svg, une simple balise <code class="code">&lt;img /&gt;</code> suffit :
+                  
+                  <pre class="programlisting">...
+&lt;img src="../Question5/annee.svg" alt="histogramme par mois" 
+	height="80%" width="80%" /&gt;
+...</pre>
+                  			</p>
+            </div>
+            <div class="sect2" title="1.6.&nbsp;Document XHTML composite">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e93"></a>1.6.&nbsp;Document XHTML composite
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Nous avions également écrit une feuille de transformation afin de produire un fichier XHTML contenant à la fois 
+                  				les résultats en chiffre sous forme de liste et l&#8217;histogramme en SVG. L&#8217;écriture de cette feuille XSL n&#8217;était 
+                  				pas si compliquée en soit puisque cela consistait simplement à refaire ce que nous avions réalisé lors des questions précédentes.
+                  				De plus, la majorité des navigateurs Internet interprètent nativement les graphiques SVG ce qui permet donc d&#8217;intégrer
+                  
+                  				ces derniers au sein du document XHTML. Cela permet, par exemple, au navigateur d&#8217;éviter de refaire une seconde requête
+                  HTTP pour charger ces graphiques, 
+                  				dans le cas où ces derniers étaient référencés dans la balise <code class="code">&lt;img /&gt;</code>.
+                  			
+               </p>
+            </div>
+            <div class="sect2" title="1.7.&nbsp;Production de résultats statistiques">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e101"></a>1.7.&nbsp;Production de résultats statistiques
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Lors de cette partie, nous devions écrire une feuille de style permettant de produire un document XHTML présentant le
+                  nombre de films par décade.
+                  				Nous avions définis deux groupes SVG: l&#8217;un contenant les barres de l&#8217;histogramme et l&#8217;autre contenant l&#8217;axe des Y. 
+                  				Ce qui nous a posé des difficultés pour réaliser cette tâche, n'était pas l&#8217;écriture des règles de transformations mais
+                  plutôt de trouver les 
+                  				bonnes formules mathématiques qui nous permettaient d&#8217;arriver au résultat attendue.
+                  			
+               </p>
+               <p>
+                  				<a class="link" href="#histo8" title="Figure&nbsp;A.3.&nbsp; Histogramme Question 8">Histogramme 8</a>
+                  			
+               </p>
+            </div>
+         </div>
+         <div class="sect1" title="2.&nbsp;TP Docbook">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d53e111"></a>2.&nbsp;TP Docbook
+                     </h2>
+                  </div>
+               </div>
+               <div></div>
+            </div>
+            <div class="sect2" title="2.1.&nbsp;Logiciels utilisés">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e114"></a>2.1.&nbsp;Logiciels utilisés
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <p>
+                  				Pour l&#8217;édition des fichiers XML (fichiers ANT et Docbook) nous avons utilisé Eclipse.
+                  				Pour les transformation XSLT, nous avons utilisé Saxon.
+                  				Enfin, pour générer les fichiers XML-FO, nous avons utilisé la librairie Fop (Formatting Objects Processor) dans sa version
+                  1.0.
+                  			
+               </p>
+            </div>
+            <div class="sect2" title="2.2.&nbsp;Fichiers Docbook">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e119"></a>2.2.&nbsp;Fichiers Docbook
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <div class="sect3" title="2.2.1.&nbsp;Version">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e122"></a>2.2.1.&nbsp;Version
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					La version de Docbook utilisée est la 4.5, ce que l&#8217;on peut constater grâce à sa DTD:
+                     <pre class="programlisting">&lt;!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"../docbook-4.5-dtd/docbookx.dtd"&gt;</pre>
+                     				</p>
+               </div>
+               <div class="sect3" title="2.2.2.&nbsp;Répertoires">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e130"></a>2.2.2.&nbsp;Répertoires
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					Les fichiers Docbook se trouvent dans le répertoire input. 
+                     					Les fichiers générés se trouvent dans le répertoire output, dans lequel on retrouvent deux sous-répertoires: 
+                     					un pour les sorties HTML et un deuxième pour les sorties PDF.
+                     				
+                  </p>
+               </div>
+               <div class="sect3" title="2.2.3.&nbsp;Type de document">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e135"></a>2.2.3.&nbsp;Type de document
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					Docbook permet d&#8217;écrire deux types de document: &#8220;book&#8221; et &#8220;article&#8221;, selon la balise utilisée. 
+                     					Les compte rendus seront des articles, ceux ci étant plus adaptés et plus concis pour la rédaction de documents technique.
+                     
+                     					La principale différence avec le type &#8220;book&#8221; est que celui-ci peut contenir une balise &#8220;chapter&#8221; et également une balise
+                     &#8220;article&#8221;. 
+                     					Un article, lui ne peut pas contenir de &#8220;book&#8221;.
+                     				
+                  </p>
+               </div>
+               <div class="sect3" title="2.2.4.&nbsp;Balises utilisées">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e140"></a>2.2.4.&nbsp;Balises utilisées
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					<code class="code">&lt;sect1&gt;</code> : permet de structurer un document, on peut y retrouver:
+                     					
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist" type="disc">
+                           <li class="listitem"><code class="code">&lt;title&gt;</code>: le titre de la section
+                           </li>
+                           <li class="listitem"><code class="code">&lt;para&gt;</code>: pour créer un paragraphe
+                           </li>
+                           <li class="listitem"><code class="code">&lt;link&gt;</code>: pour créer un lien
+                           </li>
+                        </ul>
+                     </div>
+                     				
+                  </p>
+                  <p>
+                     					Pour créer un lien vers une ancre dans un document, on procède comme ceci:
+                     					<pre class="programlisting">&lt;link linkend="image-id"&gt;figure 1&lt;/link&gt;</pre>
+                     				</p>
+                  <p>
+                     					Il ne nous reste plus qu&#8217;à insérer l&#8217;image vers laquelle pointe le lien:
+                     <pre class="programlisting">&lt;figure id="image-id"&gt;
+   &lt;title&gt;&lt;link linkend="image-id"&gt;Texte ici&lt;/link&gt;&lt;/title&gt;
+   &lt;mediaobject&gt;
+	   &lt;imageobject&gt;
+		   &lt;imagedata fileref="image.jpg" format="JPG" role="pdf" /&gt;
+	   &lt;/imageobject&gt;
+	   &lt;imageobject&gt;
+		   &lt;imagedata fileref="image.jpg" format="JPG" role="html"/&gt;
+	   &lt;/imageobject&gt;
+   &lt;/mediaobject&gt;
+&lt;/figure&gt;</pre>
+                     					Notons que l&#8217;on peut différencier l&#8217;image en fonction du document généré via l&#8217;attribut &#8220;role&#8221; de &#8220;imagedata&#8221;.
+                     				</p>
+               </div>
+            </div>
+            <div class="sect2" title="2.3.&nbsp;Script ANT">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d53e172"></a>2.3.&nbsp;Script ANT
+                        </h3>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <div class="sect3" title="2.3.1.&nbsp;Impression">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e175"></a>2.3.1.&nbsp;Impression
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					C&#8217;est la création du script ANT qui a été la partie la plus compliquée et qui a pris le plus de temps dans ce TP. 
+                     					Le script ANT &#8220;build.xml&#8221; se situe à la racine du répertoire Docbook.
+                     				
+                  </p>
+               </div>
+               <div class="sect3" title="2.3.2.&nbsp;Utilisation">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e180"></a>2.3.2.&nbsp;Utilisation
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					Le script ANT possède plusieurs cibles, dont deux qui nous intéressent:
+                     					
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist" type="disc">
+                           <li class="listitem">build-html: génère les fichiers *.html à partir des fichiers Docbook</li>
+                           <li class="listitem">build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</li>
+                        </ul>
+                     </div>
+                     				
+                  </p>
+               </div>
+               <div class="sect3" title="2.3.3.&nbsp;Syntaxe">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e191"></a>2.3.3.&nbsp;Syntaxe
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <div class="simplesect" title="Définir une variable:">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h5 class="title"><a name="d53e194"></a>Définir une variable:
+                              </h5>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div><pre class="programlisting">&lt;property name="ma_variable" value="ma_valeur" /&gt;</pre>
+                     					Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l&#8217;appelle comme
+                     ceci: <code class="code">${ma_variable}</code></div>
+                  <div class="simplesect" title="Définir une cible:">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h5 class="title"><a name="d53e202"></a>Définir une cible:
+                              </h5>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div><pre class="programlisting">&lt;target name="ma_cible" depends="dependance" 
+	description="La description de la cible"&gt;</pre>
+                     					Avec name, le nom de la cible. C&#8217;est cette valeur là qu&#8217;il faudra utiliser pour exécuter le script ant avec cette cible:<pre class="programlisting">&gt; ant ma_cible</pre>
+                     					L&#8217;attribut depends permet d'exécuter d&#8217;autres cibles avant celle-ci.</div>
+                  <div class="simplesect" title="Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h5 class="title"><a name="d53e211"></a>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:
+                              </h5>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div>
+                     <table border="0" summary="Simple list" class="simplelist">
+                        <tr>
+                           <td>créer le répertoire définit par la variable &#8220;mon_repertoire&#8221;:</td>
+                        </tr>
+                        <tr>
+                           <td><pre class="programlisting">&lt;mkdir dir="${mon_repertoire}" /&gt;</pre></td>
+                        </tr>
+                        <tr>
+                           <td>supprime &#8220;mon_repertoire&#8221;:</td>
+                        </tr>
+                        <tr>
+                           <td><pre class="programlisting">&lt;delete dir="${mon_repertoire}" /&gt;</pre></td>
+                        </tr>
+                        <tr>
+                           <td>copie le répertoire &#8220;a_copier&#8221; vers &#8220;destination&#8221;:</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <pre class="programlisting">&lt;copy toDir="${destination}/assets" &gt;
+	&lt;fileset dir="${a_copier}/assets" /&gt;
+&lt;/copy&gt;</pre>
+                              						</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div class="sect3" title="2.3.4.&nbsp;Pourquoi utiliser XML-FO pour générer des PDF?">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title"><a name="d53e232"></a>2.3.4.&nbsp;Pourquoi utiliser XML-FO pour générer des PDF?
+                           </h4>
+                        </div>
+                     </div>
+                     <div></div>
+                  </div>
+                  <p>
+                     					Il n&#8217;est pas possible de générer des fichiers PDF directement à partir des fichiers Docbook. 
+                     					Il faut soit générer des fichiers LaTeX, soit des fichiers XML-FO, pour ensuite les convertir en PDF.
+                     					L&#8217;avantage d&#8217;utiliser XML-FO au lieu de LaTex, est qu&#8217;il s&#8217;agit d&#8217;un fichier XML. La génération se fait grâce à une transformation
+                     XSL. 
+                     					Pour générer le fichier PDF à partir du XML-FO, on utilise la librairie Fop, qui est développée en Java. 
+                     					Pour résumer, utiliser XML-FO permet d&#8217;utiliser des technologies que l&#8217;on connait bien et surtout en rapport avec la
+                     matière DOC.
+                     				
+                  </p>
+               </div>
+            </div>
          </div>
          <div class="appendix" title="A.&nbsp;Images">
-            <h2 class="title" style="clear: both"><a name="d53e33"></a>A.&nbsp;Images
+            <h2 class="title" style="clear: both"><a name="d53e237"></a>A.&nbsp;Images
             </h2>
-            <div class="figure"><a name="image-id"></a><p class="title"><b>Figure&nbsp;A.1.&nbsp;
-                     				<a class="link" href="#image-id" title="Figure&nbsp;A.1.&nbsp; Texte ici">Texte ici</a>
+            <div class="figure"><a name="histo4"></a><p class="title"><b>Figure&nbsp;A.1.&nbsp;
+                     				<a class="link" href="#histo4" title="Figure&nbsp;A.1.&nbsp; Histogramme Question 4">Histogramme Question 4</a>
                      			</b></p>
                <div class="figure-contents">
-                  <div class="mediaobject"><img src="image.jpg" alt="Texte ici"></div>
+                  <div class="mediaobject"><img src="input/images/histo4.jpg" alt="Histogramme Question 4"></div>
+               </div>
+            </div><br class="figure-break"><div class="figure"><a name="histo5"></a><p class="title"><b>Figure&nbsp;A.2.&nbsp;
+                     				<a class="link" href="#histo5" title="Figure&nbsp;A.2.&nbsp; Histogramme Question 5">Histogramme Question 5</a>
+                     			</b></p>
+               <div class="figure-contents">
+                  <div class="mediaobject"><img src="input/images/histo5.jpg" alt="Histogramme Question 5"></div>
+               </div>
+            </div><br class="figure-break"><div class="figure"><a name="histo8"></a><p class="title"><b>Figure&nbsp;A.3.&nbsp;
+                     				<a class="link" href="#histo8" title="Figure&nbsp;A.3.&nbsp; Histogramme Question 8">Histogramme Question 8</a>
+                     			</b></p>
+               <div class="figure-contents">
+                  <div class="mediaobject"><img src="input/images/histo8.jpg" alt="Histogramme Question 8"></div>
                </div>
             </div><br class="figure-break"></div>
          <div class="bibliography" title="Bibliographie">
             <div class="titlepage">
                <div>
                   <div>
-                     <h2 class="title"><a name="d53e47"></a>Bibliographie
+                     <h2 class="title"><a name="d53e273"></a>Bibliographie
                      </h2>
                   </div>
                </div>
                <div></div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="SVG tutorial"><a name="d53e51"></a><p><span class="authorgroup"><span class="corpauthor">
-                           						<a class="ulink" href="http://www.w3schools.com/svg/default.asp" target="_top">w3school.com</a>
+               <div class="biblioentry" title="SVG tutorial"><a name="d53e277"></a><p><span class="authorgroup"><span class="corpauthor">
+                           						<a class="ulink" href="http://www.w3schools.com/svg/default.asp" target="_top">www.w3school.com</a>
                            					</span>. </span><span class="title"><i>SVG tutorial</i>. </span></p>
                </div>
             </div>
             <div class="bibliodiv">
-               <div class="biblioentry" title="Document structure"><a name="d53e61"></a><p><span class="authorgroup"><span class="corpauthor">
-                           						<a class="ulink" href="http://www.w3.org/TR/SVG/struct.html" target="_top">w3.org</a>
+               <div class="biblioentry" title="Document structure"><a name="d53e287"></a><p><span class="authorgroup"><span class="corpauthor">
+                           						<a class="ulink" href="http://www.w3.org/TR/SVG/struct.html" target="_top">www.w3.org</a>
                            					</span>. </span><span class="title"><i>Document structure</i>. </span></p>
+               </div>
+            </div>
+            <div class="bibliodiv">
+               <div class="biblioentry" title="Site officiel de Docbook"><a name="d53e297"></a><p><span class="authorgroup"><span class="corpauthor">
+                           						<a class="ulink" href="http://www.docbook.org/" target="_top">www.docbook.org</a>
+                           					</span>. </span><span class="title"><i>Site officiel de Docbook</i>. </span></p>
+               </div>
+            </div>
+            <div class="bibliodiv">
+               <div class="biblioentry" title="Documentation de Docbook"><a name="d53e307"></a><p><span class="authorgroup"><span class="corpauthor">
+                           						<a class="ulink" href="http://www.docbook.org/tdg/en/html/docbook.html" target="_top">www.docbook.org</a>
+                           					</span>. </span><span class="title"><i>Documentation de Docbook</i>. </span></p>
                </div>
             </div>
          </div>
