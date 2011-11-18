@@ -176,9 +176,9 @@
 				<para>
 					<code><![CDATA[<sect1>]]></code> : permet de structurer un document, on peut y retrouver:
 					<itemizedlist>
-						<listitem><code><![CDATA[<title>]]></code>: le titre de la section</listitem>
-						<listitem><code><![CDATA[<para>]]></code>: pour créer un paragraphe</listitem>
-						<listitem><code><![CDATA[<link>]]></code>: pour créer un lien</listitem>
+						<listitem><para><code><![CDATA[<title>]]></code>: le titre de la section</para></listitem>
+						<listitem><para><code><![CDATA[<para>]]></code>: pour créer un paragraphe</para></listitem>
+						<listitem><para><code><![CDATA[<link>]]></code>: pour créer un lien</para></listitem>
 					</itemizedlist>
 				</para>
 				<para>
@@ -216,8 +216,8 @@
 				<para>
 					Le script ANT possède plusieurs cibles, dont deux qui nous intéressent:
 					<itemizedlist>
-						<listitem>build-html: génère les fichiers *.html à partir des fichiers Docbook</listitem>
-						<listitem>build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</listitem>
+						<listitem><para>build-html: génère les fichiers *.html à partir des fichiers Docbook</para></listitem>
+						<listitem><para>build-pdf-xalan: génère les fichiers *.fo pour ensuite les transformer en *.pdf</para></listitem>
 					</itemizedlist>
 				</para>
 			</sect3>
@@ -225,31 +225,35 @@
 				<title>Syntaxe</title>
 				<simplesect>
 					<title>Définir une variable:</title>
-					<programlisting><![CDATA[<property name="ma_variable" value="ma_valeur" />]]></programlisting>
-					Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l’appelle comme ceci: <code>${ma_variable}</code>
+					<para>
+						<programlisting><![CDATA[<property name="ma_variable" value="ma_valeur" />]]></programlisting>
+						Avec name, le nom de la variable, et value, sa valeur. Pour utiliser une variable dans un script, on l’appelle comme ceci: <code>${ma_variable}</code>
+					</para>
 				</simplesect>
 				<simplesect>
 					<title>Définir une cible:</title>
-<programlisting><![CDATA[<target name="ma_cible" depends="dependance" 
+					<para>
+						<programlisting><![CDATA[<target name="ma_cible" depends="dependance" 
 	description="La description de la cible">]]></programlisting>
-					Avec name, le nom de la cible. C’est cette valeur là qu’il faudra utiliser pour exécuter le script ant avec cette cible:
-					<programlisting>&gt; ant ma_cible</programlisting>
-					L’attribut depends permet d'exécuter d’autres cibles avant celle-ci.
+						Avec name, le nom de la cible. C’est cette valeur là qu’il faudra utiliser pour exécuter le script ant avec cette cible:
+						<programlisting>&gt; ant ma_cible</programlisting>
+						L’attribut depends permet d'exécuter d’autres cibles avant celle-ci.
+					</para>
 				</simplesect>
 				<simplesect>
 					<title>Dans une cible, on peut exécuter plusieurs actions, dont les plus simples sont:</title>
-					<simplelist>
-						<member>créer le répertoire définit par la variable “mon_repertoire”:</member>
-						<member><programlisting><![CDATA[<mkdir dir="${mon_repertoire}" />]]></programlisting></member>
-						<member>supprime “mon_repertoire”:</member>
-						<member><programlisting><![CDATA[<delete dir="${mon_repertoire}" />]]></programlisting></member>
-						<member>copie le répertoire “a_copier” vers “destination”:</member>
-						<member>
+					<itemizedlist>
+						<listitem><para>créer le répertoire définit par la variable “mon_repertoire”:</para></listitem>
+						<listitem><para><programlisting><![CDATA[<mkdir dir="${mon_repertoire}" />]]></programlisting></para></listitem>
+						<listitem><para>supprime “mon_repertoire”:</para></listitem>
+						<listitem><programlisting><![CDATA[<delete dir="${mon_repertoire}" />]]></programlisting></listitem>
+						<listitem><para>copie le répertoire “a_copier” vers “destination”:</para></listitem>
+						<listitem>
 <programlisting><![CDATA[<copy toDir="${destination}/assets" >
 	<fileset dir="${a_copier}/assets" />
 </copy>]]></programlisting>
-						</member>
-					</simplelist>
+						</listitem>
+					</itemizedlist>
 				</simplesect>
 			</sect3>
 			<sect3>
