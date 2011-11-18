@@ -19,18 +19,18 @@
 	</articleinfo>
 
 	<sect1>
-		<title>Compte Rendus des TP SVG et SVG2</title>
+		<title>Compte Rendus du TP SVG</title>
 		<sect2>
 			<title>Objectifs</title>
 			<para>
-				Le but de ces deux TPs est de nous familiariser au modèle SVG (Scalable Vector Graphics), 
+				Le but du TP est de nous familiariser au modèle SVG (Scalable Vector Graphics), 
 				l’écriture de feuilles de transformation générique grâce notamment à l'utilisation des fonctions avec paramètres en XSLT.
 			</para>
 		</sect2>
 		<sect2>
 			<title>Environnement de développement XML</title>
 			<para>
-				Pour réaliser ces TPs nous avions utilisé l’IDE Eclipse et son mode WTP (Web Tools Platform), 
+				Pour réaliser ce TP nous avions utilisé l’IDE Eclipse et son mode WTP (Web Tools Platform), 
 				ainsi que les navigateur Firefox/Chrome pour la visualisation des documents produits. 
 				Nous avions également eu recours aux consoles de débogages de Google chrome et au plugin Firebug de Firefox, 
 				pour mieux inspecter les modèles SVG générés.
@@ -39,7 +39,8 @@
 		<sect2>
 			<title>Utilisation d’un document externe pour la transformation</title>
 			<para>
-				Dans cette partie, nous avions écris une feuille de style utilisant deux fichiers XML en entrée: un premier fichier XML comme source de données, et un second comme source de style.
+				Dans cette partie, nous avions écris une feuille de style utilisant deux fichiers XML en entrée: 
+				un premier fichier XML comme source de données, et un second comme source de style.
 				Dans un premier temps, nous devions lire le fichier de style dans une variable <code>$style</code>, comme ceci:
 
 <programlisting><![CDATA[...
