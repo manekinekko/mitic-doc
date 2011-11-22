@@ -1,0 +1,7659 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="page" page-height="210mm" page-width="297mm" margin-top="10mm" margin-bottom="10mm" margin-left="20mm" margin-right="20mm">
+<fo:region-body margin-top="15mm" margin-bottom="15mm"/>
+<fo:region-before extent="20mm"/>
+<fo:region-after extent="10mm"/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="page">
+<fo:static-content flow-name="xsl-region-before" font-size="12pt">
+<fo:block color="#aaa">
+<fo:table border-after-style="solid" width="100%" table-layout="fixed">
+<fo:table-column column-width="30%" column-number="1"/>
+<fo:table-column column-width="40%" column-number="2"/>
+<fo:table-column column-width="30%" column-number="3"/>
+<fo:table-body start-indent="0pt" text-align="start">
+<fo:table-row>
+<fo:table-cell>
+<fo:block text-align="right" text-transform="uppercase">mondial</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block text-align="center">mondial</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block text-align="left">uni-goettingen.de
+										</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+</fo:static-content>
+<fo:static-content break-after="page" flow-name="xsl-region-after" font-size="12pt">
+<fo:block text-align="center">
+						page
+						<fo:page-number/>
+</fo:block>
+</fo:static-content>
+<fo:flow flow-name="xsl-region-body" font-size="12pt">
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Albania</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						28750</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Albania-Tirane</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Greece</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						131940</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Greece-Athens</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Macedonia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						25333</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Macedonia-Skopje</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Serbia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SRB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						77474</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Belgrade-SRB-SRB</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Montenegro</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MNE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						14026</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Podgorica-MNE-MNE</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kosovo</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KOS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						10887</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Pristina-KOS-KOS</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Andorra</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AND</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						450</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Andorra-Andorra-la-Vella</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">France</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						F</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						547030</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-France-Paris</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Spain</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						E</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						504750</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Spain-Madrid</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Austria</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						A</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						83850</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Austria-Vienna</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Czech Republic</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						78703</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Czech-Republic-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Germany</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						D</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						356910</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Germany-Berlin</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Hungary</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						H</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						93030</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Hungary-Budapest</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Italy</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						I</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						301230</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Italy-Rome</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Liechtenstein</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						160</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Liechtenstein-Vaduz</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Slovakia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						48845</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Slovakia-Bratislava</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Slovenia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SLO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						20256</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Slovenia-Ljubljana</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Switzerland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						41290</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Switzerland-5</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Belarus</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BY</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						207600</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Belarus-Minsk</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Latvia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						64100</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Latvia-Riga</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Lithuania</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						65200</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Lithuania-Vilnius</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Poland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						312683</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Poland-Warsaw</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Ukraine</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						UA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						603700</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Ukraine-Kiev</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Russia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						R</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						17075200</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Russia-Moscow</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Belgium</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						B</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						30510</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Belgium-Brussels</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Luxembourg</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						L</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2586</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Luxembourg-Luxembourg</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Netherlands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						37330</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Netherlands-Amsterdam</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bosnia and Herzegovina</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BIH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						51233</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Bosnia-and-Herzegovina-Sarajevo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Croatia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						HR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						56538</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Croatia-Zagreb</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bulgaria</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						110910</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Bulgaria-Sofia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Romania</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						237500</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Romania-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Turkey</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						780580</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Turkey-Ankara</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Denmark</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						DK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						43070</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Denmark-Copenhagen</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Estonia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						EW</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						45100</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Estonia-Tallinn</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Faroe Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FARX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1400</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Faroe-Islands-Torshavn</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Finland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SF</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						337030</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Finland-Helsinki</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Norway</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						N</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						324220</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Norway-Oslo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Sweden</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						S</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						449964</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Sweden-Stockholm</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Monaco</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1.9</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Monaco-Monaco</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Gibraltar</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GBZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						6.5</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Gibraltar-Gibraltar</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guernsey</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GBG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						194</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Guernsey-Saint-Peter-Port</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Holy See</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						V</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						0.44</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Holy-See-Vatican-City</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Iceland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						103000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Iceland-Reykjavik</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Ireland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IRL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						70280</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Ireland-Dublin</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">San Marino</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RSM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						60</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-San-Marino-San-Marino</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Jersey</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GBJ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						117</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Jersey-Saint-Helier</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Malta</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						M</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						320</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Malta-Valletta</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Man</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GBM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						588</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Man-Douglas</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Moldova</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						33700</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Moldova-Chisinau</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Portugal</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						P</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						92080</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Portugal-Lisbon</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Svalbard</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SVAX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						62049</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Longyearbyen-SVAX-SVAX</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">United Kingdom</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						244820</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-United-Kingdom-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Afghanistan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AFG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						647500</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Afghanistan-Kabul</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">China</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TJ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						9596960</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-China-3</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Iran</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1648000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Iran-Tehran</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Pakistan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						803940</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Pakistan-15</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Tajikistan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TAD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						143100</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Tajikistan-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Turkmenistan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						488100</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Turkmenistan-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Uzbekistan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						UZB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						447400</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Uzbekistan-Tashkent</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Armenia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ARM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						29800</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Armenia-Yerevan</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Georgia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						69700</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Georgia-Tbilisi</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Azerbaijan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						86600</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Azerbaijan-Baku</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bahrain</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BRN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						620</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Bahrain-Manama</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bangladesh</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						144000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Bangladesh-2-0</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Myanmar</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MYA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						678500</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Burma-Rangoon</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">India</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IND</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						3287590</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-India-New-Delhi</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bhutan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BHT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						47000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Bhutan-Thimphu</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Brunei</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BRU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						5770</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Brunei-Bandar-Seri-Begawan</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Malaysia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MAL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						329750</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Malaysia-Kuala-Lumpur</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Laos</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LAO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						236800</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Laos-Vientiane</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Thailand</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						THA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						514000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Thailand-Bangkok</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cambodia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						K</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						181040</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Cambodia-Phnom-Penh</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Vietnam</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						VN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						329560</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Vietnam-Hanoi</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kazakstan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KAZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2717300</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Kazakstan-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">North Korea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NOK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						120540</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-North-Korea-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kyrgyzstan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KGZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						198500</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Kyrgyzstan-Bishkek</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Hong Kong</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						HONX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1092</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Hongkong</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Macau</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MACX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						16</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Macau-Macau</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mongolia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MNG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1565000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Mongolia-Ulaanbaatar</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Nepal</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NEP</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						140800</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Nepal-Kathmandu</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Christmas Island</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						XMAS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						135</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-The-Settlement-XMAS-XMAS</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cocos Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						COCO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						14</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-West-Island-COCO-COCO</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cyprus</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CY</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						9251</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Cyprus-Nicosia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Gaza Strip</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GAZA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						360</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Israel</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						20770</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Israel-Jerusalem</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Egypt</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ET</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1001450</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Egypt-Cairo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Indonesia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1919440</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Indonesia-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Timor-Leste</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						15007</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Dili-TL-TL</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Papua New Guinea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PNG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						461690</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Papua-New-Guinea-Port-Moresby</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Iraq</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						IRQ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						437072</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Iraq-Baghdad</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Jordan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						JOR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						89213</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Jordan-Amman</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kuwait</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KWT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						17820</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Kuwait-Kuwait</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saudi Arabia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1960582</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Saudi-Arabia-Riyadh</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Syria</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SYR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						185180</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Syria-Damascus</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Lebanon</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						10400</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Lebanon-Beirut</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">West Bank</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WEST</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						5860</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Japan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						J</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						377835</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Japan-Tokyo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">South Korea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ROK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						98480</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-South-Korea-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Maldives</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						300</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Maldives-Male</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Oman</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						OM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						212460</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Oman-Muscat</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">United Arab Emirates</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						UAE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						75581</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-United-Arab-Emirates-3</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Yemen</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						YE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						527970</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Yemen-Sanaa</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Philippines</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RP</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						299764</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Philippines-Manila</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Qatar</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						Q</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						11000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Qatar-Doha</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Singapore</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SGP</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						632.6</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Singapore-Singapore</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Sri Lanka</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						65610</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Sri-Lanka-Colombo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Taiwan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						36179</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Taiwan-Taipei</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Anguilla</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AXA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						102</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-The-Valley-AXA-AXA</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Antigua and Barbuda</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						442</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Antigua-and-Barbuda-Saint-Johns</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Aruba</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ARU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						193</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Oranjestad-ARU-ARU</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bahamas</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						13940</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Bahamas-Nassau</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Barbados</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BDS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						430</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Barbados-Bridgetown</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Belize</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						22960</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Belize-Belmopan</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guatemala</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GCA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						108890</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Guatemala-Guatemala-City</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mexico</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MEX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1972550</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Mexico-Mexico-City</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bermuda</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BERM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						53.3</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Hamilton-BERM-BERM</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">British Virgin Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BVIR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						153</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Road-Town-BVIR-BVIR</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Canada</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CDN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						9976140</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Canada-13</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">United States</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						USA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						9372610</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-United-States-22</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cayman Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CAYM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						262</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-George-Town-CAYM-CAYM</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Costa Rica</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						51100</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Costa-Rica-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Nicaragua</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NIC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						129494</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Nicaragua-Managua</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Panama</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						78200</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Panama-Panama-City</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cuba</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						C</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						110860</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Cuba-Havana</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Dominica</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						746</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Dominica-Roseau</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Dominican Republic</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						DOM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						48730</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Dominican-Republic-Santo-Domingo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Haiti</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						27750</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Haiti-Port-au-Prince</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">El Salvador</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ES</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						21040</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-El-Salvador-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Honduras</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						HCA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						112090</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Honduras-Tegucigalpa</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Greenland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GROX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2175600</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Greenland-Nuuk</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Grenada</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						344</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Grenada-Saint-Georges</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guadeloupe</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GUAD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1780</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-GUAD-Basse-Terre</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Jamaica</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						JA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						10991</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Jamaica-Kingston</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Martinique</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MART</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1128</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-MART-Fort-de-France</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Montserrat</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MNTS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						102</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Plymouth-MNTS-MNTS</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Netherlands Antilles</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						960</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Willemstad-NA</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Martin</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SMAR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						54</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Marigot-SMAR</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Colombia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1138910</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Colombia-Bogota</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Puerto Rico</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						8870</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-San-Juan-PR-PR</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Kitts and Nevis</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						269</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Saint-Kitts-and-Nevis-Basseterre</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Lucia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						620</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Saint-Lucia-Castries</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Pierre and Miquelon</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SPMI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						242</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-SPMI-Saint-Pierre</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Vincent and the Grenadines</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						389</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Saint-Vincent-and-the-Grenadines-Kingstown</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Trinidad and Tobago</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						5130</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Trinidad-and-Tobago-Port-of-Spain</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Turks and Caicos Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TUCA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						430</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Grand-Turk-TUCA-TUCA</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Virgin Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						VIRG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						352</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-VIRG-Charlotte-Amalie</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">American Samoa</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AMSA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						199</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Pago-Pago-AMSA-AMSA</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Australia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						AUS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						7686850</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Australia-8</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cook Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						COOK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						240</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Avarua-COOK-COOK</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Fiji</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FJI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						18270</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Fiji-Suva</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">French Polynesia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FPOL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						4167</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Papeete-FPOL-FPOL</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guam</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GUAM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						541.3</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Agana-GUAM</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kiribati</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						KIR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						717</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Kiribati-Tarawa</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Marshall Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						181.3</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Marshall-Islands-Majuro</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Micronesia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FSM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						702</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Micronesia-Palikir</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Nauru</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NAU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						21</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Yaren</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">New Caledonia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NCA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						19060</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-New-Caledonia-Noumea</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">New Zealand</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						268680</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-New-Zealand-Wellington</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Niue</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NIUE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						260</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Alofi-NIUE-NIUE</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Norfolk Island</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NORF</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						34.6</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-NORF-Kingston</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Northern Mariana Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NMIS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						477</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Saipan-NMIS-NMIS</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Palau</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PAL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						458</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Palau-Melekeok</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Pitcairn Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PITC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						47</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Adamstown-PITC-PITC</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Solomon Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SLB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						28450</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Solomon-Islands-Honiara</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Tonga</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						748</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Tonga-Nukualofa</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Tuvalu</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TUV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						26</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Tuvalu-Funafuti</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Vanuatu</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						VU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						14760</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Vanuatu-Port-Vila</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Wallis and Futuna</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WAFU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						274</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Mata-Utu-WAFU-WAFU</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Samoa</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2860</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Samoa-Apia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Argentina</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2766890</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Argentina-Buenos-Aires</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Bolivia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BOL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1098580</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Bolivia-La-Paz</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Brazil</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						8511965</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Brazil-Brasilia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Chile</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RCH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						756950</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Chile-Santiago</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Paraguay</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PY</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						406750</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Paraguay-Asuncion</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Uruguay</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ROU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						176220</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Uruguay-Montevideo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Peru</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						PE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1285220</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Peru-Lima</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">French Guiana</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FGU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						91000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-French-Guiana-Cayenne</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guyana</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GUY</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						214970</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Guyana-Georgetown</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Suriname</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SME</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						163270</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Suriname-Paramaribo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Venezuela</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						YV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						912050</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Venezuela-Caracas</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Ecuador</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						EC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						283560</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Ecuador-Quito</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Falkland Islands</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						FALK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						12173</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Stanley-FALK-FALK</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Algeria</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						DZ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2381740</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Algeria-Algiers</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Libya</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LAR</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1759540</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Libya-Tripoli</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mali</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RMM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1240000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Mali-Bamako</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mauritania</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RIM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1030700</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Mauritania-Nouakchott</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Morocco</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						446550</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Morocco-3</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Niger</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1267000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Niger-Niamey</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Tunisia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						163610</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Tunisia-Tunis</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Western Sahara</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WSA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						266000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						stadt-El_Aaiun-DARS-DARS</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Angola</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ANG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1246700</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Angola-Luanda</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Congo</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RCB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						342000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Congo-Brazzaville</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Namibia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						NAM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						825418</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Namibia-Windhoek</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Zaire</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ZRE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2345410</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Zaire-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Zambia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						Z</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						752610</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Zambia-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Benin</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BEN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						112620</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Benin-Porto-Novo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Burkina Faso</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BF</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						274200</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Burkina-Faso-Ouagadougou</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Nigeria</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WAN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						923770</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Nigeria-Abuja</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Togo</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						56790</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Togo-Lome</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Botswana</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						600370</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Botswana-Gaborone</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">South Africa</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RSA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1219912</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-South-Africa-6</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Zimbabwe</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ZW</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						390580</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Zimbabwe-Harare</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cote dIvoire</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						322460</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Cote-dIvoire-Yamoussoukro</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Ghana</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						238540</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Ghana-Accra</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Burundi</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						BI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						27830</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Burundi-Bujumbura</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Rwanda</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RWA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						26340</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Rwanda-Kigali</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Tanzania</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						EAT</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						945090</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Tanzania-Dar-es-Salaam</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cameroon</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CAM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						475440</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Cameroon-3</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Central African Republic</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RCA</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						622980</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Central-African-Republic-Bangui</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Chad</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						TCH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1284000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Chad-NDjamena</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Equatorial Guinea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GQ</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						28050</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Equatorial-Guinea-Malabo</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Gabon</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						G</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						267670</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Gabon-Libreville</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Cape Verde</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						CV</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						4030</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Cape-Verde-Praia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Sudan</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SUD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2505810</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Sudan-Khartoum</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Comoros</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						COM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2170</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Comoros-Moroni</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guinea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						245860</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Guinea-Conakry</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Liberia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						111370</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Liberia-Monrovia</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Djibouti</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						DJI</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						22000</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Djibouti-Djibouti</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Eritrea</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ER</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						121320</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Eritrea-Asmara</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Ethiopia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						ETH</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1127127</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Ethiopia-Addis-Ababa</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Somalia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SP</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						637660</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Somalia-Mogadishu</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Kenya</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						EAK</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						582650</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Kenya-Nairobi</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Gambia</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WAG</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						11300</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Gambia-Banjul</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Senegal</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						196190</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-Senegal-Dakar</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Guinea-Bissau</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						GNB</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						36120</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Guinea-Bissau-Bissau</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Sierra Leone</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						WAL</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						71740</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Sierra-Leone-Freetown</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Uganda</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						EAU</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						236040</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Uganda-Kampala</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Lesotho</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						LS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						30350</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Lesotho-Maseru</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Madagascar</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						RM</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						587041</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Madagascar-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Malawi</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MW</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						118480</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Malawi-Lilongwe</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mozambique</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MOC</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						801590</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Mozambique-2</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mauritius</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MS</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2040</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Mauritius-Port-Louis</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Mayotte</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						MAYO</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						374</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Mamoutzou-MAYO-MAYO</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Swaziland</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SD</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						17360</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Swaziland-Mbabane</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Reunion</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						REUN</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						2510</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Saint-Denis-REUN-REUN</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Saint Helena</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						HELX</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						413</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						city-Jamestown-HELX-HELX</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Sao Tome and Principe</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						STP</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						1001</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Sao-Tome-and-Principe-Sao-Tome</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+<fo:block keep-together="always">
+<fo:block text-align="left" font-weight="bold">
+<fo:inline>*</fo:inline>
+<fo:inline text-transform="capitalize">Seychelles</fo:inline>
+</fo:block>
+<fo:block text-align="left" margin-left="50pt">
+<fo:block>
+<fo:inline font-style="italic">
+						car_code
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						SY</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						area
+					</fo:inline>
+<fo:inline text-transform="uppercase" font-weight="bold">
+						:
+						455</fo:inline>
+</fo:block>
+<fo:block>
+<fo:inline font-style="italic">
+						capital
+					</fo:inline>
+<fo:inline text-transform="capitalize" font-weight="bold">
+						:
+						cty-cid-cia-Seychelles-Victoria</fo:inline>
+</fo:block>
+</fo:block>
+</fo:block>
+</fo:flow>
+</fo:page-sequence>
+</fo:root>

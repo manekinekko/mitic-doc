@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project default="newFO" basedir=".">
+	  <!-- =================================================================== -->
+	  <!-- Production du FO	avec un transformateur XSLT	                       -->
+	  <!-- =================================================================== -->
+	  <target name="newFO">
+		<xslt in="../mondial.xml" out="resultat.fo" style="../transform1.xsl" />
+	  </target>	  
+</project>
