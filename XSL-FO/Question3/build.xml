@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project default="newPDF" basedir=".">
+	<!-- =================================================================== -->
+	<!-- Initialisations pour FOP		                                               -->
+	<!-- =================================================================== -->
+	<target name="init">
+
+		<tstamp/>
+
+		<path id="run-classpath">
+			<fileset dir="../lib/fop-1.0/lib">
+				<include name="*.jar"/>
+			</fileset>
+			<pathelement location="../lib/fop-1.0/build/fop.jar"/>
+		</path>
+		<taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop" classpathref="run-classpath"/>
+
+	</target>
+	<!-- =================================================================== -->
+	<!-- Production du FO	avec un transformateur XSLT	                       -->
+	<!-- =================================================================== -->
+	<target name="newFO">
+		<xslt in="../mondial.xml" out="resultat.fo" style="transform3.xsl" />
+	</target>
+	<!-- =================================================================== -->
+	<!-- Fonction fop (dans le répertoire courant)							                       -->
+	<!-- =================================================================== -->
+	<target name="newResult">
+		<fop format="${mimetype}" outdir="${outDir}" messagelevel="warn" relativebase="true">
+			<fileset dir=".">
+				<include name="*.fo"/>
+			</fileset>
+		</fop>
+	</target>
+	<!-- =================================================================== -->
+	<!-- Produit un fichier PDF 		                                       -->
+	<!-- =================================================================== -->
+	<target name="newPDF" depends="init" description="création PDF">
+		<antcall target="newResult">
+			<param name="mimetype" value="application/pdf"/>
+			<param name="msglevel" value="warn"/>
+			<param name="outDir" value="."/>
+		</antcall>
+	</target>
+	<!-- =================================================================== -->
+	<!-- Produit un fichier PS 		                                       -->
+	<!-- =================================================================== -->
+	<target name="newPS" depends="init" description="création PS">
+		<antcall target="newResult">
+			<param name="mimetype" value="application/postscript"/>
+			<param name="msglevel" value="warn"/>
+			<param name="outDir" value="."/>
+		</antcall>
+	</target>
+
+</project>
