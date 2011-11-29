@@ -13,8 +13,8 @@
 </fo:repeatable-page-master-alternatives>
 </fo:page-sequence-master>
 </fo:layout-master-set>
-<fo:page-sequence master-reference="impair">
-<fo:static-content font-size="12pt" flow-name="entete-un">
+<fo:page-sequence master-reference="pair-impair">
+<fo:static-content font-size="12pt" flow-name="xsl-region-before">
 <fo:block color="#aaa">
 <fo:table border-after-style="solid" width="100%" table-layout="fixed">
 <fo:table-column column-width="50%" column-number="1"/>

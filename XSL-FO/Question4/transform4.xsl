@@ -8,6 +8,7 @@
 		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
 			<!-- Modèle de mise en page -->
 			<fo:layout-master-set>
+
 				<fo:simple-page-master margin-right="20mm"
 					margin-left="20mm" margin-bottom="10mm" margin-top="10mm"
 					page-width="210mm" page-height="297mm" master-name="paire">
@@ -16,6 +17,7 @@
 						extent="20mm" />
 					<fo:region-after extent="10mm" />
 				</fo:simple-page-master>
+
 				<fo:page-sequence-master master-name="pair-impair">
 					<fo:repeatable-page-master-alternatives
 						maximum-repeats="no-limit">
@@ -25,12 +27,13 @@
 							odd-or-even="even" master-reference="pair" />
 					</fo:repeatable-page-master-alternatives>
 				</fo:page-sequence-master>
+
 			</fo:layout-master-set>
 
 
-			<fo:page-sequence master-reference="impair">
+			<fo:page-sequence master-reference="pair-impair">
 				<!-- placer ici le contenu de l'entête des pages impaires -->
-				<fo:static-content font-size="12pt" flow-name="entete-un">
+				<fo:static-content font-size="12pt" flow-name="xsl-region-before">
 					<fo:block color="#aaa">
 
 						<fo:table border-after-style="solid" width="100%"
@@ -81,7 +84,8 @@
 										</fo:block>
 									</fo:table-cell>
 									<fo:table-cell>
-										<fo:block text-align="left"><fo:page-number />
+										<fo:block text-align="left">
+											<fo:page-number />
 										</fo:block>
 									</fo:table-cell>
 								</fo:table-row>
@@ -91,7 +95,7 @@
 					</fo:block>
 				</fo:static-content>
 				<fo:flow flow-name='xsl-region-body' font-size="12pt">
-					<xsl:apply-templates select="country" mode="body"/>
+					<xsl:apply-templates select="country" mode="body" />
 				</fo:flow>
 			</fo:page-sequence>
 
