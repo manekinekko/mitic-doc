@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+	<plop>
+		<F>f1</F>
+		<P>p4</P>
+	</plop>
+	<plop>
+		<F>f2</F>
+		<P>p2</P>
+	</plop>
+	<plop>
+		<F>f2</F>
+		<P>p4</P>
+	</plop>
+	<plop>
+		<F>f3</F>
+		<P>p2</P>
+	</plop>
+	<plop>
+		<F>f3</F>
+		<P>p4</P>
+	</plop>
+	<plop>
+		<F>f4</F>
+		<P>p4</P>
+	</plop>
+</result>
