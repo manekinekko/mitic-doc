@@ -12,9 +12,10 @@
 				<produit>
 					<nom>{ $produit/Nom_p/text() }</nom>
 					{
+						let $doc := doc('../epicerie.xml')
 						for 
-							$fournisseur in doc('../epicerie.xml')/epicerie/listeFournisseur/fournisseur,
-							$fourniture in doc('../epicerie.xml')/epicerie/listeFourniture/fourniture
+							$fournisseur in $doc/epicerie/listeFournisseur/fournisseur,
+							$fourniture in $doc/epicerie/listeFourniture/fourniture
 						
 						where $fourniture/P = $produit/P 
 						and   $fourniture/F = $fournisseur/F
